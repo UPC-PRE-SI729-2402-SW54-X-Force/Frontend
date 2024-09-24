@@ -1,1 +1,11 @@
-<app-header></app-header>
+<mat-toolbar class="mat-toolbar">
+  <img  class="logo" src='https://i.postimg.cc/SJ4jMbFT/Drive-Now-Logo.png' alt='Drive-Now-Logo'/>
+  <span><a routerLink="/home" style="text-decoration: none; color: white">DriveNow</a></span>
+  <span class="mat-spacer"></span>
+  @for (option of options; track option.title) {
+   <a mat-button [routerLink]="option.path" class="page-option"><p class="button-text">{{ option.title }}</p></a>
+  }
+</mat-toolbar>
+<div class="page-content">
+  <router-outlet></router-outlet>
+</div>

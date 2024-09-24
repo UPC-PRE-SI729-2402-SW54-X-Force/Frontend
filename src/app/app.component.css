@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.mat-spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  background-color: #2C3E50;
+  color: white;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}
+.page-option{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.button-text{
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.account_icon {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  font-size: 35px; /* Adjust the value as needed */
+}
+.logo{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
