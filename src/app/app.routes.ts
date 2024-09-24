@@ -6,7 +6,7 @@ import {ResourcesComponent} from "./public/pages/resources/resources.component";
 import {WorkComponent} from "./public/pages/work/work.component";
 import {LeasingComponent} from "./public/pages/leasing/leasing.component";
 import {OffersComponent} from "./public/pages/offers/offers.component";
-import {UserComponent} from "./public/pages/user/user.component";
+import {UserComponent} from "./user-management/pages/user/user.component";
 
 export const routes: Routes = [
   {path: 'home', component: HomeComponent},
