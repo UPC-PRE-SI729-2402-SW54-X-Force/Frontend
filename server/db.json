@@ -2,18 +2,27 @@
   "resources": [
     {
       "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-      "title": "Introduction to Python",
-      "description": "A beginner's guide to Python programming, covering the basics of syntax and key concepts."
+      "title": "Recomendaciones de Seguridad al Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
     },
     {
       "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-      "title": "Web Development with Angular",
-      "description": "Learn how to build dynamic web applications using Angular framework and TypeScript."
+      "title": "Documentación Necesaria para Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
     },
     {
       "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-      "title": "Spring Boot for Backend Development",
-      "description": "An in-depth tutorial on using Spring Boot to create robust backend services for web applications."
+      "title": "Destinos Turísticos Populares",
+      "description": "Explora los sitios turísticos más populares de la región que puedes visitar durante tu viaje. Desde playas hasta montañas, descubre los mejores lugares para relajarte o aventurarte.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Rutas Escénicas Recomendadas",
+      "description": "Descubre las rutas más pintorescas para conducir en tu destino. Disfruta de los paisajes mientras viajas a través de carreteras recomendadas por su belleza y tranquilidad.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
     }
   ]
 }
