@@ -1,4 +1,6 @@
-export class User{
+import { License } from "./license.entity";
+
+export class User {
   id: number;
   name: string;
   age: number;
@@ -6,6 +8,8 @@ export class User{
   address: string;
   pfp: string;
   joined: string;
+  license: License[];
+
   constructor() {
     this.id = 0;
     this.name = "";
@@ -14,5 +18,6 @@ export class User{
     this.email = "";
     this.pfp = "";
     this.joined = "";
+    this.license = [];
   }
 }
