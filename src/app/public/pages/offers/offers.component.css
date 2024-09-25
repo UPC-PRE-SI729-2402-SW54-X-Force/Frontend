@@ -7,11 +7,11 @@
 }
 
 .sidebar {
-  flex: 0 0 30%; /* Sidebar ocupa el 30% del ancho */
+  flex: 0 0 30%;
   padding: 20px;
-  background-color: #f9f9f9; /* Fondo claro */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,55 +19,55 @@
 }
 
 .sidebar mat-form-field {
-  width: 100%; /* Inputs ocupan todo el ancho disponible */
-  margin-bottom: 20px; /* Espacio entre los campos */
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .sidebar mat-checkbox {
   margin-bottom: 20px;
-  color: #2ECC71; /* Color del texto del checkbox */
+  color: #2ECC71;
 }
 
 .mat-checkbox .mat-checkbox-background {
-  background-color: #2ECC71 !important; /* Cambia el color del fondo del checkbox seleccionado */
+  background-color: #2ECC71 !important;
 }
 
 .mat-checkbox-checked .mat-checkbox-background,
 .mat-checkbox-indeterminate .mat-checkbox-background {
-  border-color: #2ECC71 !important; /* Cambia el color del borde del checkbox */
+  border-color: #2ECC71 !important;
 }
 
 .mat-checkbox-checked.mat-accent .mat-checkbox-background,
 .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-  background-color: #2ECC71 !important; /* Color del check seleccionado */
+  background-color: #2ECC71 !important;
 }
 
-/* Cambia el color del checkbox cuando está seleccionado */
+
 .mat-checkbox-checked .mat-checkbox-frame {
   border-color: #2ECC71 !important;
 }
 
-/* Hover en checkbox */
+
 .mat-checkbox:hover .mat-checkbox-frame {
   border-color: #2ECC71 !important;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
-  border-color: #2ECC71; /* Cambia el color de borde al verde esmeralda */
+  border-color: #2ECC71;
 }
 
-/* Hover sobre el calendario y fechas seleccionadas */
+
 .mat-calendar-body-cell:hover {
-  background-color: rgba(46, 204, 113, 0.1); /* Fondo verde claro al hacer hover en las fechas */
+  background-color: rgba(46, 204, 113, 0.1);
 }
 
 .mat-calendar-body-selected {
-  background-color: #2ECC71 !important; /* Cambia el color de la fecha seleccionada */
-  color: white !important; /* Cambia el color del texto al seleccionar */
+  background-color: #2ECC71 !important;
+  color: white !important;
 }
 
 .mat-calendar-body-today {
-  border-color: #2ECC71 !important; /* Borde verde para el día actual */
+  border-color: #2ECC71 !important;
 }
 
 .offers-list {
@@ -80,8 +80,8 @@
 
 .offers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards por fila */
-  gap: 20px; /* Reduce el espacio entre las tarjetas */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-items: center;
 }
 
@@ -92,7 +92,7 @@
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
-  width: 230px; /* Ajusta el ancho de las tarjetas */
+  width: 230px;
 }
 
 .card img {
@@ -101,20 +101,21 @@
 }
 
 .card-content h3 {
-  font-size: 18px; /* Tamaño para el nombre del propietario */
-  font-weight: bold; /* Negrita para el propietario */
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .card-content p {
-  font-size: 14px; /* Tamaño para el contenido de la tarjeta */
-  margin: 5px 0; /* Margen entre los párrafos */
+  font-size: 14px;
+  margin: 5px 0;
 }
 
 .card-footer button {
-  font-size: 12px; /* Tamaño del botón */
+  font-size: 12px;
 }
 
 h2 {
-  font-size: 24px; /* Tamaño del título principal "Traveling? Rent a car!" */
-  text-align: center;
+  font-size: 30px;
+  padding: 10px 0 15px 20px; /* Arriba 10px, derecha 0, abajo 10px, izquierda 10px */
 }
+

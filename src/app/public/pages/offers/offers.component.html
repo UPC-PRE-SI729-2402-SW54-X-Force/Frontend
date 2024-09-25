@@ -1,6 +1,6 @@
 <div class="offers-container">
   <div class="sidebar">
-    <!-- Campo de texto para el destino -->
+
     <mat-form-field appearance="outline">
       <mat-label>Destination</mat-label>
       <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" />
@@ -9,7 +9,7 @@
       </button>
     </mat-form-field>
 
-    <!-- Datepicker -->
+
     <mat-form-field appearance="outline">
       <mat-label>Date</mat-label>
       <input matInput [matDatepicker]="picker" />
@@ -17,7 +17,7 @@
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <!-- Checkboxes -->
+
     <mat-checkbox>Travel with insurance</mat-checkbox>
     <mat-checkbox>Exclude premium offers</mat-checkbox>
   </div>

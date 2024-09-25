@@ -9,7 +9,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { MatIconModule } from '@angular/material/icon';  // Importa MatIconModule
+import { MatIconModule } from '@angular/material/icon';
 import { Offer } from './offer.model';
 
 @Component({
@@ -25,7 +25,7 @@ import { Offer } from './offer.model';
     MatButtonModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatIconModule  // Asegúrate de incluir MatIconModule aquí
+    MatIconModule
   ],
   templateUrl: './offers.component.html',
   styleUrls: ['./offers.component.css']
