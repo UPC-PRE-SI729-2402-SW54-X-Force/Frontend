@@ -22,7 +22,7 @@ export class UserEditComponent {
   @ViewChild('userForm', {static: false}) userForm!: NgForm;
   @Input() editMode: boolean = false;
   @Input() user: User;
-  @Output() userUpdated: EventEmitter<User> = new EventEmitter<User>();
+  @Output() userNameUpdated: EventEmitter<User> = new EventEmitter<User>();
   @Output() editCanceled: EventEmitter<any> = new EventEmitter();
 
   // Constructor
@@ -40,8 +40,10 @@ export class UserEditComponent {
   onSubmit(): void {
     if (this.userForm.form.valid) {
       if(this.editMode){
-        let emitter: EventEmitter<User> = this.userUpdated;
+        let emitter: EventEmitter<User> = this.userNameUpdated;
         emitter.emit(this.user);
+        console.log('User updated');
+        this.resetEditState();
       }
       this.resetEditState();
     } else {
@@ -53,4 +55,7 @@ export class UserEditComponent {
     this.resetEditState();
   }
 
+  editName():void {
+    this.editMode = true;
+  }
 }
