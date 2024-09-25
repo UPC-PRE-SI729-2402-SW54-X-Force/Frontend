@@ -1,1 +1,23 @@
-<p>user works!</p>
+<div class="user-data-display">
+  <span class="user-data" style="font-weight: bold">{{user.name}}</span>
+  <img src="{{user.pfp}}" class="user-pfp" alt="user-profile-pfp">
+  <span class="user-data">Age: {{user.age}}</span>
+  <span class="user-data">E-mail: {{user.email}}</span>
+  <span class="user-data">Address: {{user.address}}</span>
+  <span class="user-data">Joined in: {{user.joined}}</span>
+</div>
+<mat-divider></mat-divider>
+<mat-list>
+  <mat-list-item>
+    <span matListItemTitle>Subscription Status</span>
+    <span matListItemLine><a>Rewards</a></span>
+    <span matListItemLine><a>Manage subscription</a></span>
+    <span matListItemLine><a>Gift a subscription</a></span>
+  </mat-list-item>
+  <mat-list-item>
+    <span matListItemTitle>Account</span>
+  </mat-list-item>
+  <mat-list-item>
+    <span matListItemTitle>Customer Support</span>
+  </mat-list-item>
+</mat-list>
