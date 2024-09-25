@@ -29,7 +29,7 @@ export class UserComponent implements OnInit {
     this.user = new User();
   }
   ngOnInit(): void {
-    this.subscription = this.userService.getById(1).subscribe((data: User) => {
+    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
       this.user = data;
     });
   }

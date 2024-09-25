@@ -9,9 +9,12 @@ import { BaseService } from '../../shared/services/base.service';
   providedIn: 'root'
 })
 export class UsersService extends BaseService<User> {
+
+  userId: number;
   constructor(http: HttpClient) {
     super(http);
     this.resourceEndpoint = '/users';
+    this.userId = 1;
   }
 
   getById(id: number): Observable<User> {

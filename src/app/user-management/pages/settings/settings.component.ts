@@ -23,7 +23,7 @@ export class SettingsComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.subscription = this.userService.getById(1).subscribe((data: User) => {
+    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
       this.userData = data;
     });
   }
