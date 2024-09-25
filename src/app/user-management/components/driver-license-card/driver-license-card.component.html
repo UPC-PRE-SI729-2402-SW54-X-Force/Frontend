@@ -1,0 +1,13 @@
+<h1 style="margin-left: 20px">Current License</h1>
+<div class="license-display" *ngFor="let lic of user.license">
+  <mat-card>
+    <img [src]="lic.urlImage" alt="user-license" class="license-image">
+    <mat-card-content>
+      <h2 style="margin-top: 0px">License Number: {{ lic.licenseNumber }}</h2>
+      <p>License expiration date: {{ lic.expirationDate | date: 'shortDate' }}</p>
+      <p>License emition date: {{ lic.emitionDate | date: 'shortDate' }}</p>
+      <p>License class: {{lic.class}}</p>
+      <p>license category: {{lic.category}}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
