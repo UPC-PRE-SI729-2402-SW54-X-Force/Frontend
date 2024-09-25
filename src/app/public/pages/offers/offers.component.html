@@ -1,1 +1,45 @@
-<p>offers works!</p>
+<div class="offers-container">
+  <div class="sidebar">
+    <!-- Campo de texto para el destino -->
+    <mat-form-field appearance="outline">
+      <mat-label>Destination</mat-label>
+      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" />
+      <button mat-icon-button matSuffix aria-label="Clear" *ngIf="destination" (click)="destination=''">
+        <mat-icon>clear</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <!-- Datepicker -->
+    <mat-form-field appearance="outline">
+      <mat-label>Date</mat-label>
+      <input matInput [matDatepicker]="picker" />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <!-- Checkboxes -->
+    <mat-checkbox>Travel with insurance</mat-checkbox>
+    <mat-checkbox>Exclude premium offers</mat-checkbox>
+  </div>
+
+  <div class="offers-list">
+    <h2>Traveling? Rent a car!</h2>
+    <div class="offers-grid">
+      <div class="card" *ngFor="let offer of offers">
+        <div class="card-content">
+          <h3>{{ offer.owner }}</h3>
+          <img [src]="offer.car.image" alt="{{ offer.car.model }}" />
+          <p>{{ offer.car.model }}</p>
+          <p>{{ offer.car.year }}</p>
+          <p>{{ offer.subtitle }}</p>
+          <p>{{ offer.description }}</p>
+        </div>
+        <div class="card-footer">
+          <button mat-raised-button color="primary" [disabled]="offer.status !== 'Enabled'">
+            {{ offer.status }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

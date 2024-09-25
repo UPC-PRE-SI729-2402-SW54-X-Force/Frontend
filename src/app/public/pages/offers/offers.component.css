@@ -1,0 +1,120 @@
+.offers-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  flex: 0 0 30%; /* Sidebar ocupa el 30% del ancho */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo claro */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.sidebar mat-form-field {
+  width: 100%; /* Inputs ocupan todo el ancho disponible */
+  margin-bottom: 20px; /* Espacio entre los campos */
+}
+
+.sidebar mat-checkbox {
+  margin-bottom: 20px;
+  color: #2ECC71; /* Color del texto del checkbox */
+}
+
+.mat-checkbox .mat-checkbox-background {
+  background-color: #2ECC71 !important; /* Cambia el color del fondo del checkbox seleccionado */
+}
+
+.mat-checkbox-checked .mat-checkbox-background,
+.mat-checkbox-indeterminate .mat-checkbox-background {
+  border-color: #2ECC71 !important; /* Cambia el color del borde del checkbox */
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #2ECC71 !important; /* Color del check seleccionado */
+}
+
+/* Cambia el color del checkbox cuando está seleccionado */
+.mat-checkbox-checked .mat-checkbox-frame {
+  border-color: #2ECC71 !important;
+}
+
+/* Hover en checkbox */
+.mat-checkbox:hover .mat-checkbox-frame {
+  border-color: #2ECC71 !important;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  border-color: #2ECC71; /* Cambia el color de borde al verde esmeralda */
+}
+
+/* Hover sobre el calendario y fechas seleccionadas */
+.mat-calendar-body-cell:hover {
+  background-color: rgba(46, 204, 113, 0.1); /* Fondo verde claro al hacer hover en las fechas */
+}
+
+.mat-calendar-body-selected {
+  background-color: #2ECC71 !important; /* Cambia el color de la fecha seleccionada */
+  color: white !important; /* Cambia el color del texto al seleccionar */
+}
+
+.mat-calendar-body-today {
+  border-color: #2ECC71 !important; /* Borde verde para el día actual */
+}
+
+.offers-list {
+  flex: 0 0 70%;
+  padding: 10px;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards por fila */
+  gap: 20px; /* Reduce el espacio entre las tarjetas */
+  justify-items: center;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 230px; /* Ajusta el ancho de las tarjetas */
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.card-content h3 {
+  font-size: 18px; /* Tamaño para el nombre del propietario */
+  font-weight: bold; /* Negrita para el propietario */
+}
+
+.card-content p {
+  font-size: 14px; /* Tamaño para el contenido de la tarjeta */
+  margin: 5px 0; /* Margen entre los párrafos */
+}
+
+.card-footer button {
+  font-size: 12px; /* Tamaño del botón */
+}
+
+h2 {
+  font-size: 24px; /* Tamaño del título principal "Traveling? Rent a car!" */
+  text-align: center;
+}
