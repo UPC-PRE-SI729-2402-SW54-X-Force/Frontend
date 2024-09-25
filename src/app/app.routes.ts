@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import {HomeComponent} from "./public/pages/home/home.component";
 import {AboutComponent} from "./public/pages/about/about.component";
 import {CommunityComponent} from "./public/pages/community/community.component";
-import {ResourcesComponent} from "./public/pages/resources/resources.component";
+import {ResourcesComponent} from "./resources/pages/resources/resources.component";
 import {WorkComponent} from "./public/pages/work/work.component";
 import {LeasingComponent} from "./public/pages/leasing/leasing.component";
 import {OffersComponent} from "./public/pages/offers/offers.component";

@@ -1,10 +1,19 @@
 {
-  "users": [
+  "resources": [
     {
-      "id": 1,
-      "name": "John Doe",
-      "age": 26,
-      "address": "San birga"
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Introduction to Python",
+      "description": "A beginner's guide to Python programming, covering the basics of syntax and key concepts."
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Web Development with Angular",
+      "description": "Learn how to build dynamic web applications using Angular framework and TypeScript."
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Spring Boot for Backend Development",
+      "description": "An in-depth tutorial on using Spring Boot to create robust backend services for web applications."
     }
   ]
 }
