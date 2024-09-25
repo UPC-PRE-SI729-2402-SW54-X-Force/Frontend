@@ -4,6 +4,7 @@ import {User} from "../../model/user.entity";
 import {Subscription} from "rxjs";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatList, MatListItem, MatListItemLine, MatListItemTitle} from "@angular/material/list";
+import {RouterLink, RouterModule} from "@angular/router";
 
 @Component({
   selector: 'app-user',
@@ -14,6 +15,8 @@ import {MatList, MatListItem, MatListItemLine, MatListItemTitle} from "@angular/
     MatListItem,
     MatListItemTitle,
     MatListItemLine,
+    RouterLink,
+    RouterModule
   ],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
@@ -26,7 +29,7 @@ export class UserComponent implements OnInit {
     this.user = new User();
   }
   ngOnInit(): void {
-    this.subscription = this.userService.getById(1).subscribe((data: User) => {
+    this.subscription = this.userService.getById(3).subscribe((data: User) => {
       this.user = data;
     });
   }
