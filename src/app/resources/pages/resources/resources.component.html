@@ -8,11 +8,14 @@
           <mat-card-header>
             <mat-card-title>{{ resource.title }}</mat-card-title>
           </mat-card-header>
+          <br>
           <mat-card-content>
             {{ resource.description }}
           </mat-card-content>
           <mat-card-actions>
+            <a [href]="resource.url" target="_blank">
             <button mat-raised-button color="primary">View</button>
+            </a>
           </mat-card-actions>
         </div>
       </div>

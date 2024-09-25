@@ -21,7 +21,7 @@
 }
 
 .example-card {
-  width: 600px; /* Tamaño fijo para todas las tarjetas */
+  width: 700px; /* Tamaño fijo para todas las tarjetas */
   max-width: 100%;
   margin: 10px 0; /* Espaciado vertical entre tarjetas */
 }
