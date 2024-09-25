@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "name": "Abigail Doe",
+      "name": "Jaime Reyes",
       "age": 16,
       "email": "youdata@gmail.com",
       "address": "San georgia",
@@ -20,10 +20,10 @@
     },
     {
       "id": 3,
-      "name": "Martin Doe",
+      "name": "Abigail Doe",
       "age": 46,
-      "email": "datafa@gmail.com",
-      "address": "Miraflores",
+      "email": "pepnsa@gmail.com",
+      "address": "San Miguel",
       "pfp": "https://st2.depositphotos.com/1144472/7360/i/450/depositphotos_73608199-stock-photo-woman-showing-thumbs-up-gesture.jpg",
         "joined": "2021-01-03"
     }
