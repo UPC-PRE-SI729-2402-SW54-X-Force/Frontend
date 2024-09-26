@@ -17,7 +17,7 @@ export class BaseService<T> {
     })
   }
 
-  constructor(private http: HttpClient) {  }
+  constructor(protected http: HttpClient) {  }
 
   handleError(error: HttpErrorResponse) {
     // Default error handling
@@ -50,11 +50,12 @@ export class BaseService<T> {
 
   // Get All Resources
   getAll(): Observable<T> {
+    console.log(this.http.get<T>(this.resourcePath(), this.httpOptions).pipe(retry(2), catchError(this.handleError)))
     return this.http.get<T>(this.resourcePath(), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
-  private resourcePath(): string {
+  protected resourcePath(): string {
     return `${this.basePath}${this.resourceEndpoint}`;
   }
 }
