@@ -100,7 +100,7 @@
       "car": {
         "model": "Honda Creta",
         "year": 2022,
-        "image": "/assets/images/car-1.png"
+        "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png"
       },
       "title": "Title 1",
       "subtitle": "Subtitle 1",
@@ -126,7 +126,7 @@
       "car": {
         "model": "Honda Creta",
         "year": 2022,
-        "image": "/assets/images/car-1.png"
+        "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png"
       },
       "title": "Title 3",
       "subtitle": "Subtitle 3",
