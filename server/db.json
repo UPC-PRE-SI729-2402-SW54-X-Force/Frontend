@@ -113,7 +113,7 @@
       "car": {
         "model": "Subaru Outback",
         "year": 2021,
-        "image": "/assets/images/car-2.png"
+        "image": "https://i.postimg.cc/ncpgVs3w/car-2.png"
       },
       "title": "Title 2",
       "subtitle": "Subtitle 2",
@@ -139,7 +139,7 @@
       "car": {
         "model": "Subaru Outback",
         "year": 2021,
-        "image": "/assets/images/car-2.png"
+        "image": "https://i.postimg.cc/ncpgVs3w/car-2.png"
       },
       "title": "Title 4",
       "subtitle": "Subtitle 4",
@@ -152,7 +152,7 @@
       "car": {
         "model": "Subaru Outback",
         "year": 2021,
-        "image": "/assets/images/car-1.png"
+        "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png"
       },
       "title": "Title 5",
       "subtitle": "Subtitle 5",
@@ -165,7 +165,7 @@
       "car": {
         "model": "Honda Creta",
         "year": 2022,
-        "image": "/assets/images/car-2.png"
+        "image": "https://i.postimg.cc/ncpgVs3w/car-2.png"
       },
       "title": "Title 6",
       "subtitle": "Subtitle 6",
