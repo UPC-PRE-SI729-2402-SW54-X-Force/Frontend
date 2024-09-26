@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Jhon Doe",
+      "name": "Jon Emit",
       "age": 36,
       "email": "youaasfata@gmail.com",
       "address": "San geo",
@@ -11,7 +11,7 @@
       "license": [
         {
           "id": "87569867",
-         "surname": "Doe",
+          "surname": "Doe",
           "name": "Joe",
           "licenseNumber": "Q87569867",
           "class": "A",
