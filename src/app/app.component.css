@@ -25,7 +25,7 @@ mat-toolbar {
   height: 35px;
   width: 35px;
   border-radius: 100%;
-  font-size: 35px; /* Adjust the value as needed */
+  font-size: 35px;
 }
 .logo{
   margin-left: 20px;

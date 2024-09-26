@@ -66,5 +66,111 @@
         }
       ]
     }
+  ],
+  "resources": [
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Recomendaciones de Seguridad al Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Documentación Necesaria para Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Destinos Turísticos Populares",
+      "description": "Explora los sitios turísticos más populares de la región que puedes visitar durante tu viaje. Desde playas hasta montañas, descubre los mejores lugares para relajarte o aventurarte.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Rutas Escénicas Recomendadas",
+      "description": "Descubre las rutas más pintorescas para conducir en tu destino. Disfruta de los paisajes mientras viajas a través de carreteras recomendadas por su belleza y tranquilidad.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "owner": "Anderson Díaz",
+      "car": {
+        "model": "Honda Creta",
+        "year": 2022,
+        "image": "/assets/images/car-1.png"
+      },
+      "title": "Title 1",
+      "subtitle": "Subtitle 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled"
+    },
+    {
+      "id": 2,
+      "owner": "Nicolás Davila",
+      "car": {
+        "model": "Subaru Outback",
+        "year": 2021,
+        "image": "/assets/images/car-2.png"
+      },
+      "title": "Title 2",
+      "subtitle": "Subtitle 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled"
+    },
+    {
+      "id": 3,
+      "owner": "Sebastián Ramírez",
+      "car": {
+        "model": "Honda Creta",
+        "year": 2022,
+        "image": "/assets/images/car-1.png"
+      },
+      "title": "Title 3",
+      "subtitle": "Subtitle 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled"
+    },
+    {
+      "id": 4,
+      "owner": "Sebastián Ramírez",
+      "car": {
+        "model": "Subaru Outback",
+        "year": 2021,
+        "image": "/assets/images/car-2.png"
+      },
+      "title": "Title 4",
+      "subtitle": "Subtitle 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled"
+    },
+    {
+      "id": 5,
+      "owner": "Nicolás Davila",
+      "car": {
+        "model": "Subaru Outback",
+        "year": 2021,
+        "image": "/assets/images/car-1.png"
+      },
+      "title": "Title 5",
+      "subtitle": "Subtitle 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled"
+    },
+    {
+      "id": 6,
+      "owner": "Anderson Díaz",
+      "car": {
+        "model": "Honda Creta",
+        "year": 2022,
+        "image": "/assets/images/car-2.png"
+      },
+      "title": "Title 6",
+      "subtitle": "Subtitle 6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled"
+    }
   ]
 }
