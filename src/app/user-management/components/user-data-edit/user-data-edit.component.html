@@ -4,14 +4,14 @@
   <mat-form-field>
     <input matInput placeholder="Name" name="name" required [(ngModel)]="user.name" [readonly]="!editChangeNameMode">
   </mat-form-field>
-  <ng-container *ngIf="editChangeNameMode; else editMode">
+  <ng-container *ngIf="editChangeNameMode; else editModeName">
     <button mat-raised-button color="primary">Update</button>
     <button mat-raised-button color="warn" (click)="onChangeNameCancel()">Cancel</button>
   </ng-container>
-  <ng-template #editMode>
+  <ng-template #editModeName>
     <button mat-raised-button color="primary" (click)="onChangeName()">Edit</button>
   </ng-template>
-</form>
+  </form>
 </div>
 <h4>Change e-mail</h4>
 <div class="form-section">
@@ -19,14 +19,13 @@
     <mat-form-field>
       <input matInput placeholder="Email" name="email" required [(ngModel)]="user.email" [readonly]="!editChangeEmailMode">
     </mat-form-field>
-    <ng-container>
-      @if(editChangeEmailMode) {
+    <ng-container *ngIf="editChangeEmailMode; else editModeEmail">
         <button mat-raised-button color="primary">Update</button>
         <button mat-raised-button color="warn" (click)="onChangeEmailCancel()">Cancel</button>
-      } @else {
-        <button mat-raised-button color="primary" (click)="onChangeEmail()">Edit</button>
-      }
     </ng-container>
+    <ng-template #editModeEmail>
+        <button mat-raised-button color="primary" (click)="onChangeEmail()">Edit</button>
+    </ng-template>
   </form>
 </div>
 <h4>Change address</h4>
@@ -35,14 +34,13 @@
     <mat-form-field>
       <input matInput placeholder="Address" name="address" required [(ngModel)]="user.address" [readonly]="!editChangeAddressMode">
     </mat-form-field>
-    <ng-container>
-      @if(editChangeAddressMode) {
+    <ng-container *ngIf="editChangeAddressMode; else editModeAddress">
         <button mat-raised-button color="primary">Update</button>
         <button mat-raised-button color="warn" (click)="onChangeAddressCancel()">Cancel</button>
-      } @else {
-        <button mat-raised-button color="primary" (click)="onChangeAddress()">Edit</button>
-      }
     </ng-container>
+    <ng-template #editModeAddress>
+        <button mat-raised-button color="primary" (click)="onChangeAddress()">Edit</button>
+    </ng-template>
   </form>
 </div>
 <h4>Change profile picture</h4>
@@ -51,13 +49,12 @@
     <mat-form-field>
       <input matInput placeholder="Profile Picture URL" name="pfpurl" required [(ngModel)]="user.pfp" [readonly]="!editChangePfpMode">
     </mat-form-field>
-    <ng-container>
-      @if(editChangePfpMode) {
+    <ng-container *ngIf="editChangePfpMode; else editModePfp">
         <button mat-raised-button color="primary">Update</button>
         <button mat-raised-button color="warn" (click)="onChangePfpCancel()">Cancel</button>
-      } @else {
-        <button mat-raised-button color="primary" (click)="onChangePfp()">Edit</button>
-      }
     </ng-container>
+    <ng-template #editModePfp>
+        <button mat-raised-button color="primary" (click)="onChangePfp()">Edit</button>
+    </ng-template>
   </form>
 </div>
