@@ -1,0 +1,63 @@
+<h4>Change Name</h4>
+<div class="form-section">
+  <form (submit)="onChangeNameSubmit()" #changeNameForm="ngForm" class="form-row">
+  <mat-form-field>
+    <input matInput placeholder="Name" name="name" required [(ngModel)]="user.name" [readonly]="!editChangeNameMode">
+  </mat-form-field>
+  <ng-container *ngIf="editChangeNameMode; else editMode">
+    <button mat-raised-button color="primary">Update</button>
+    <button mat-raised-button color="warn" (click)="onChangeNameCancel()">Cancel</button>
+  </ng-container>
+  <ng-template #editMode>
+    <button mat-raised-button color="primary" (click)="onChangeName()">Edit</button>
+  </ng-template>
+</form>
+</div>
+<h4>Change e-mail</h4>
+<div class="form-section">
+  <form (submit)="onChangeEmailSubmit()" #changeEmailForm='ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="Email" name="email" required [(ngModel)]="user.email" [readonly]="!editChangeEmailMode">
+    </mat-form-field>
+    <ng-container>
+      @if(editChangeEmailMode) {
+        <button mat-raised-button color="primary">Update</button>
+        <button mat-raised-button color="warn" (click)="onChangeEmailCancel()">Cancel</button>
+      } @else {
+        <button mat-raised-button color="primary" (click)="onChangeEmail()">Edit</button>
+      }
+    </ng-container>
+  </form>
+</div>
+<h4>Change address</h4>
+<div class="form-section">
+  <form (submit)="onChangeAddressSubmit()" #changeAddressForm='ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="Address" name="address" required [(ngModel)]="user.address" [readonly]="!editChangeAddressMode">
+    </mat-form-field>
+    <ng-container>
+      @if(editChangeAddressMode) {
+        <button mat-raised-button color="primary">Update</button>
+        <button mat-raised-button color="warn" (click)="onChangeAddressCancel()">Cancel</button>
+      } @else {
+        <button mat-raised-button color="primary" (click)="onChangeAddress()">Edit</button>
+      }
+    </ng-container>
+  </form>
+</div>
+<h4>Change profile picture</h4>
+<div class="form-section">
+  <form (submit)="onChangePfpSubmit()" #changePfpForm ='ngForm' class="form-row">
+    <mat-form-field>
+      <input matInput placeholder="Profile Picture URL" name="pfpurl" required [(ngModel)]="user.pfp" [readonly]="!editChangePfpMode">
+    </mat-form-field>
+    <ng-container>
+      @if(editChangePfpMode) {
+        <button mat-raised-button color="primary">Update</button>
+        <button mat-raised-button color="warn" (click)="onChangePfpCancel()">Cancel</button>
+      } @else {
+        <button mat-raised-button color="primary" (click)="onChangePfp()">Edit</button>
+      }
+    </ng-container>
+  </form>
+</div>
