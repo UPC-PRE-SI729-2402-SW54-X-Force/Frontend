@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {UserEditComponent} from "../../components/user-edit/user-edit.component";
+import {UserDataEditComponent} from "../../components/user-data-edit/user-data-edit.component";
 import {User} from "../../model/user.entity";
 import {UsersService} from "../../services/users.service";
 import {Subscription} from "rxjs";
@@ -8,7 +8,7 @@ import {Subscription} from "rxjs";
   selector: 'app-settings',
   standalone: true,
   imports: [
-    UserEditComponent
+    UserDataEditComponent
   ],
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.css'
@@ -28,9 +28,9 @@ export class SettingsComponent implements OnInit{
     });
   }
 
-  private updateUserName(): void {
+  private updateUser(): void {
     let userToUpdate: User = this.userData;
-    this.userService.update(1, userToUpdate)
+    this.userService.update(userToUpdate.id, userToUpdate)
       .subscribe((response: any) => {
         this.userData = response;
       });
@@ -38,6 +38,21 @@ export class SettingsComponent implements OnInit{
 
   onUserNameUpdated(user: User) {
     this.userData.name = user.name;
-    this.updateUserName();
+    this.updateUser();
+  }
+
+  onUserEmailUpdated(user: User) {
+    this.userData.email = user.email;
+    this.updateUser();
+  }
+
+  onUserAddressUpdated(user: User) {
+    this.userData.address = user.address;
+    this.updateUser();
+  }
+
+  onUserPfpUpdated(user: User) {
+    this.userData.pfp = user.pfp;
+    this.updateUser();
   }
 }

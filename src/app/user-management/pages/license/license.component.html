@@ -1,1 +1,10 @@
-<app-driver-license-card></app-driver-license-card>
+<h1 style="margin: 20px 0 0 20px">Current License</h1>
+<div class="driver-license-display">
+  <div>
+    <app-driver-license-card style="margin: 20px"></app-driver-license-card>
+  </div>
+  <div>
+    <app-driver-license-data-edit (userLicenseUpdated) = "onUserLicenseUpdated($event)"></app-driver-license-data-edit>
+  </div>
+</div>
+
