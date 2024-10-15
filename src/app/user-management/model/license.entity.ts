@@ -5,7 +5,7 @@ export class License {
   licenseNumber: string;
   class: string;
   expirationDate: string;
-  emitionDate: string;
+  issueDate: string;
   category: string;
   urlImage: string;
 
@@ -16,7 +16,7 @@ export class License {
     this.licenseNumber = "";
     this.class = "";
     this.expirationDate = "";
-    this.emitionDate = "";
+    this.issueDate = "";
     this.category = "";
     this.urlImage = "";
   }

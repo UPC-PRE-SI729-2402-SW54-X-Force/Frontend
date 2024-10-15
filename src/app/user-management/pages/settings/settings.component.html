@@ -1,5 +1,9 @@
 <h1 style="padding-left: 20px">User settings</h1>
 <div class="edit-name">
-  <app-user-edit (userNameUpdated)="onUserNameUpdated($event)"></app-user-edit>
+  <app-user-data-edit
+    (userNameUpdated)="onUserNameUpdated($event)"
+    (userEmailUpdated)="onUserEmailUpdated($event)"
+    (userAddressUpdated)="onUserAddressUpdated($event)"
+    (userPfpUpdated)="onUserPfpUpdated($event)"></app-user-data-edit>
 </div>
 
