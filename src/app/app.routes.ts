@@ -14,8 +14,10 @@ import {LicenseComponent} from "./user-management/pages/license/license.componen
 import {RewardsComponent} from "./user-management/pages/rewards/rewards.component";
 import {SubscriptionComponent} from "./user-management/pages/subscription/subscription.component";
 import {SupportComponent} from "./public/pages/support/support.component";
+import {LoginComponent} from "./user-management/pages/login/login.component";
 
 export const routes: Routes = [
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'offers', component: OffersComponent},
   {path: 'about', component: AboutComponent},
@@ -30,6 +32,5 @@ export const routes: Routes = [
   {path: 'user/license', component: LicenseComponent},
   {path: 'user/rewards', component: RewardsComponent},
   {path: 'user/subscription', component: SubscriptionComponent},
-  {path: 'support', component: SupportComponent},
-  {path: '', redirectTo: 'home', pathMatch: 'full'}
+  {path: 'support', component: SupportComponent}
 ];
