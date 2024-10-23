@@ -15,10 +15,12 @@ import {RewardsComponent} from "./user-management/pages/rewards/rewards.componen
 import {SubscriptionComponent} from "./user-management/pages/subscription/subscription.component";
 import {SupportComponent} from "./public/pages/support/support.component";
 import {LoginComponent} from "./user-management/pages/login/login.component";
+import {RegisterComponent} from "./user-management/pages/register/register.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'home', component: HomeComponent},
   {path: 'offers', component: OffersComponent},
   {path: 'about', component: AboutComponent},

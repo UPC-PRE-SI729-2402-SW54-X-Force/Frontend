@@ -11,6 +11,11 @@ mat-form-field {
   margin-bottom: 15px;
 }
 
+.example-margin {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
 .btn-register {
   width: 100%;
   padding: 10px;

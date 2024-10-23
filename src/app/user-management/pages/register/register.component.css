@@ -1,0 +1,24 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+}
+
+.register-box {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 0 50px;
+  background-color: #f8f8f8;
+}
+
+.login-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
