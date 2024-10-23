@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MatFormField} from "@angular/material/form-field";
+import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatButton} from "@angular/material/button";
 import {MatInput} from "@angular/material/input";
 
@@ -9,7 +9,8 @@ import {MatInput} from "@angular/material/input";
   imports: [
     MatFormField,
     MatButton,
-    MatInput
+    MatInput,
+    MatLabel
   ],
   templateUrl: './login-form.component.html',
   styleUrl: './login-form.component.css'
