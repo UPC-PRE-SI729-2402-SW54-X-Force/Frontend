@@ -35,7 +35,7 @@ export class LoginFormComponent {
 
       if (user) {
         console.log('Login exitoso como arrendatario');
-        this.router.navigate(['/home']);
+        this.router.navigate(['/offers']);
       } else {
         // Intentar con el endpoint de "dueños de vehículos"
         this.userService.setResourceEndPoint('/users1');
@@ -44,7 +44,7 @@ export class LoginFormComponent {
 
           if (user) {
             console.log('Login exitoso como dueño de vehículo');
-            this.router.navigate(['/home']);
+            this.router.navigate(['/offers']);
           } else {
             console.error('Credenciales incorrectas');
             alert('Email o contraseña incorrectos.');
