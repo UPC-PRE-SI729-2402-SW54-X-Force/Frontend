@@ -6,6 +6,7 @@ export class User {
   age: number;
   email: string;
   address: string;
+  password: string;
   pfp: string;
   joined: string;
   license: License[];
@@ -15,6 +16,7 @@ export class User {
     this.name = "";
     this.age = 0;
     this.address = "";
+    this.password = "";
     this.email = "";
     this.pfp = "";
     this.joined = "";

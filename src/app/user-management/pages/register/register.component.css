@@ -1,6 +1,13 @@
+html, body {
+  height: 100%;
+  margin:0;
+  overflow: hidden;
+}
+
 .register-container {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 
 .register-box {
@@ -11,14 +18,17 @@
   background-color: #f8f8f8;
 }
 
-.login-image {
+.register-image {
   flex: 1;
+  position: relative;
+  overflow: hidden;
   background-size: cover;
   background-position: center;
 }
 
-.login-image img {
+.register-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }

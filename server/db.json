@@ -1,5 +1,22 @@
 {
-  "users": [
+  "users1": [
+    {
+      "id": 1,
+      "name": "Joe Doe",
+      "age": 36,
+      "email": "u202220033@upc.edu.pe",
+      "address": "C. Condesa de Lemos 157",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Jamir Marzál Pérez ",
+      "email": "jamir@gmail.com",
+      "address": "Av. Universitaria",
+      "password": "123456"
+    }
+  ],
+  "users2": [
     {
       "id": 1,
       "name": "Joe Doe",
@@ -8,6 +25,7 @@
       "address": "C. Condesa de Lemos 157",
       "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
       "joined": "2021-01-01",
+      "password": "123456",
       "license": [
         {
           "id": "87569867",
@@ -30,6 +48,7 @@
       "address": "San georgia",
       "pfp": "https://media.istockphoto.com/id/1051202402/photo/portrait-of-smiling-businessman-holding-tablet-and-making-ok-sign.jpg?s=612x612&w=0&k=20&c=kyiOeGPmI2aPzK9V1WY7ZTABtEQi5nvm12hcz3ccmc0=",
       "joined": "2021-01-02",
+      "password": "123456",
       "license": [
         {
           "id": "87742867",
@@ -52,6 +71,7 @@
       "address": "San Miguel",
       "pfp": "https://st2.depositphotos.com/1144472/7360/i/450/depositphotos_73608199-stock-photo-woman-showing-thumbs-up-gesture.jpg",
       "joined": "2021-01-03",
+      "password": "123456",
       "license": [
         {
           "id": "14149867",

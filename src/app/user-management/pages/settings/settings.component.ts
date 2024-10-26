@@ -20,10 +20,15 @@ export class SettingsComponent implements OnInit{
 
   constructor(private userService: UsersService) {
     this.userData = new User();
+    this.userService.setResourceEndPoint('/users2');
   }
 
   ngOnInit(): void {
-    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
+    this.subscription = this.getUserById(1);
+  }
+
+  private getUserById(id:number){
+    return this.userService.getById(id).subscribe((data:User ) =>{
       this.userData = data;
     });
   }

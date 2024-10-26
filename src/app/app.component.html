@@ -1,5 +1,5 @@
-<mat-toolbar class="mat-toolbar">
-  <img  class="logo" src='https://i.postimg.cc/SJ4jMbFT/Drive-Now-Logo.png' alt='Drive-Now-Logo'/>
+<mat-toolbar *ngIf="showToolbar" class="mat-toolbar">
+  <img class="logo" src='https://i.postimg.cc/SJ4jMbFT/Drive-Now-Logo.png' alt='Drive-Now-Logo' />
   <span><a routerLink="/home" style="text-decoration: none; color: white">DriveNow</a></span>
   <span class="mat-spacer"></span>
   @for (option of options; track option.title) {
