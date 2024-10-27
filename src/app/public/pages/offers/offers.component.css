@@ -93,6 +93,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 230px;
+  position: relative;
 }
 
 .card img {
@@ -106,8 +107,8 @@
 }
 
 .card-content p {
-  font-size: 14px;
-  margin: 5px 0;
+  font-size: 13px;
+  margin: 3px 0;
 }
 
 .card-footer button {
@@ -116,6 +117,28 @@
 
 h2 {
   font-size: 30px;
-  padding: 10px 0 15px 20px; /* Arriba 10px, derecha 0, abajo 10px, izquierda 10px */
+  padding: 10px 0 15px 20px;
 }
 
+.premium-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: orange;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+.starting-text {
+  opacity: 0.6;
+  color: gray;
+  padding: 10px;
+  font-size: 12px;
+}

@@ -2,89 +2,259 @@
   "users": [
     {
       "id": 1,
-      "name": "John Doe",
-      "age": 26,
-      "address": "San birga"
+      "name": "Jon Emit",
+      "age": 36,
+      "email": "youaasfata@gmail.com",
+      "address": "San geo",
+      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
+      "joined": "2021-01-01",
+      "license": [
+        {
+          "id": "87569867",
+          "surname": "Doe",
+          "name": "Joe",
+          "licenseNumber": "Q87569867",
+          "class": "A",
+          "expirationDate": "2027-02-01",
+          "emitionDate": "2021-02-01",
+          "category": "A3",
+          "urlImage": "https://citamedicperu.com/wp-content/uploads/2021/08/licencia-citamedic.webp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jaime Reyes",
+      "age": 16,
+      "email": "youdata@gmail.com",
+      "address": "San georgia",
+      "pfp": "https://media.istockphoto.com/id/1051202402/photo/portrait-of-smiling-businessman-holding-tablet-and-making-ok-sign.jpg?s=612x612&w=0&k=20&c=kyiOeGPmI2aPzK9V1WY7ZTABtEQi5nvm12hcz3ccmc0=",
+      "joined": "2021-01-02",
+      "license": [
+        {
+          "id": "87742867",
+          "surname": "Reyes",
+          "name": "Jaime",
+          "licenseNumber": "Q87742867",
+          "class": "A",
+          "expirationDate": "2027-02-01",
+          "emitionDate": "2021-02-01",
+          "category": "A1",
+          "urlImage": "https://citylimits.org/wp-content/uploads/2021/05/Standard-NJ-Driver-License.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Abigail Doe",
+      "age": 46,
+      "email": "pepnsa@gmail.com",
+      "address": "San Miguel",
+      "pfp": "https://st2.depositphotos.com/1144472/7360/i/450/depositphotos_73608199-stock-photo-woman-showing-thumbs-up-gesture.jpg",
+      "joined": "2021-01-03",
+      "license": [
+        {
+          "id": "14149867",
+          "surname": "Doe",
+          "name": "Abigail",
+          "licenseNumber": "Q14149867",
+          "class": "A",
+          "expirationDate": "2027-02-01",
+          "emitionDate": "2021-02-01",
+          "category": "A2",
+          "urlImage": "https://www.breveteya.pe/wp-content/uploads/2023/10/como-saque-mi-licencia-de-conducir-a1-en-solo-2-dias.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Anderson Díaz",
+      "age": 32,
+      "email": "andersn22@example.com",
+      "address": "Lurin",
+      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
+      "joined": "2022-01-01",
+      "license": [
+        {
+          "id": "14146539",
+          "surname": "Diaz",
+          "name": "Anderson",
+          "licenseNumber": "Q14145563",
+          "class": "A",
+          "expirationDate": "2028-02-01",
+          "emitionDate": "2022-02-01",
+          "category": "A2",
+          "urlImage": "https://www.breveteya.pe/wp-content/uploads/2023/10/como-saque-mi-licencia-de-conducir-a1-en-solo-2-dias.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Nicolás Davila",
+      "age": null,
+      "email": "placeholder@example.com",
+      "address": "Unknown",
+      "pfp": "",
+      "joined": "2022-01-02",
+      "license": [
+        {
+          "id": "14141763",
+          "surname": "Davila",
+          "name": "Nicolas",
+          "licenseNumber": "Q14145006",
+          "class": "A",
+          "expirationDate": "2026-02-01",
+          "emitionDate": "2020-02-01",
+          "category": "A2",
+          "urlImage": "https://www.breveteya.pe/wp-content/uploads/2023/10/como-saque-mi-licencia-de-conducir-a1-en-solo-2-dias.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Sebastián Ramírez",
+      "age": null,
+      "email": "placeholder@example.com",
+      "address": "Unknown",
+      "pfp": "",
+      "joined": "2022-01-03",
+      "license": [
+        {
+          "id": "14143009",
+          "surname": "Ramirez",
+          "name": "Sebastian",
+          "licenseNumber": "Q14142785",
+          "class": "A",
+          "expirationDate": "2025-02-01",
+          "emitionDate": "2019-02-01",
+          "category": "A2",
+          "urlImage": "https://www.breveteya.pe/wp-content/uploads/2023/10/como-saque-mi-licencia-de-conducir-a1-en-solo-2-dias.jpg"
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Recomendaciones de Seguridad al Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Documentación Necesaria para Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Destinos Turísticos Populares",
+      "description": "Explora los sitios turísticos más populares de la región que puedes visitar durante tu viaje. Desde playas hasta montañas, descubre los mejores lugares para relajarte o aventurarte.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
+    },
+    {
+      "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+      "title": "Rutas Escénicas Recomendadas",
+      "description": "Descubre las rutas más pintorescas para conducir en tu destino. Disfruta de los paisajes mientras viajas a través de carreteras recomendadas por su belleza y tranquilidad.",
+      "url": "http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf"
     }
   ],
   "offers": [
     {
       "id": 1,
-      "owner": "Anderson Díaz",
-      "car": {
-        "model": "Honda Creta",
-        "year": 2022,
-        "image": "/assets/images/car-1.png"
-      },
+      "user_id": 1,
+      "car": "Honda",
+      "model": "Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
       "title": "Title 1",
       "subtitle": "Subtitle 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Lima, Perú",
+      "date": "2024-10-26",
+      "insurance": "with insurance",
+      "premium": "basic"
     },
     {
       "id": 2,
-      "owner": "Nicolás Davila",
-      "car": {
-        "model": "Subaru Outback",
-        "year": 2021,
-        "image": "/assets/images/car-2.png"
-      },
+      "user_id": 2,
+      "car": "Subaru",
+      "model": "Outback",
+      "year": 2021,
+      "image": "https://i.postimg.cc/ncpgVs3w/car-2.png",
       "title": "Title 2",
       "subtitle": "Subtitle 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Lima, Perú",
+      "date": "2024-11-02",
+      "insurance": "without insurance",
+      "premium": "premium"
     },
     {
       "id": 3,
-      "owner": "Sebastián Ramírez",
-      "car": {
-        "model": "Honda Creta",
-        "year": 2022,
-        "image": "/assets/images/car-1.png"
-      },
+      "user_id": 3,
+      "car": "Honda",
+      "model": "Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
       "title": "Title 3",
       "subtitle": "Subtitle 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Lima, Perú",
+      "date": "2024-10-28",
+      "insurance": "with insurance",
+      "premium": "basic"
     },
     {
       "id": 4,
-      "owner": "Sebastián Ramírez",
-      "car": {
-        "model": "Subaru Outback",
-        "year": 2021,
-        "image": "/assets/images/car-2.png"
-      },
+      "user_id": 4,
+      "car": "Subaru",
+      "model": "Outback",
+      "year": 2021,
+      "image": "https://i.postimg.cc/ncpgVs3w/car-2.png",
       "title": "Title 4",
       "subtitle": "Subtitle 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Lima, Perú",
+      "date": "2024-11-05",
+      "insurance": "without insurance",
+      "premium": "premium"
     },
     {
       "id": 5,
-      "owner": "Nicolás Davila",
-      "car": {
-        "model": "Subaru Outback",
-        "year": 2021,
-        "image": "/assets/images/car-1.png"
-      },
-      "title": "Title 5",
-      "subtitle": "Subtitle 5",
+      "user_id": 5,
+      "car": "Honda",
+      "model": "Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
+      "title": "Title 3",
+      "subtitle": "Subtitle 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Lima, Perú",
+      "date": "2024-10-30",
+      "insurance": "with insurance",
+      "premium": "basic"
     },
     {
       "id": 6,
-      "owner": "Anderson Díaz",
-      "car": {
-        "model": "Honda Creta",
-        "year": 2022,
-        "image": "/assets/images/car-2.png"
-      },
-      "title": "Title 6",
-      "subtitle": "Subtitle 6",
+      "user_id": 6,
+      "car": "Subaru",
+      "model": "Outback",
+      "year": 2021,
+      "image": "https://i.postimg.cc/ncpgVs3w/car-2.png",
+      "title": "Title 4",
+      "subtitle": "Subtitle 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Lima, Perú",
+      "date": "2024-11-01",
+      "insurance": "without insurance",
+      "premium": "basic"
     }
   ]
 }
