@@ -25,25 +25,28 @@ export class LoginFormComponent {
   email: string = '';
   password: string = '';
 
-  constructor(private userService: UsersService, private router: Router) {}
+  constructor(private userService: UsersService, private router: Router) {
+  }
 
   login() {
-    // Intentar con el endpoint de "arrendatarios"
+
     this.userService.setResourceEndPoint('/users2');
     this.userService.getAll().subscribe((users: any[]) => {
       let user = users.find((u: any) => u.email === this.email && u.password === this.password);
 
       if (user) {
-        console.log('Login exitoso como arrendatario');
+        localStorage.setItem('userId', user.id.toString());
+        localStorage.setItem('userRole', 'arrendatario');
         this.router.navigate(['/home']);
       } else {
-        // Intentar con el endpoint de "dueños de vehículos"
+
         this.userService.setResourceEndPoint('/users1');
         this.userService.getAll().subscribe((users: any[]) => {
           user = users.find((u: any) => u.email === this.email && u.password === this.password);
 
           if (user) {
-            console.log('Login exitoso como dueño de vehículo');
+            localStorage.setItem('userId', user.id.toString());
+            localStorage.setItem('userRole', 'dueño');
             this.router.navigate(['/home']);
           } else {
             console.error('Credenciales incorrectas');

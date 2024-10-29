@@ -1,0 +1,37 @@
+<div class="user-data-display">
+  <span class="user-data" style="font-weight: bold">{{ user.name }}</span>
+  <img src="{{user.pfp}}" class="user-pfp" alt="user-profile-pfp">
+  <span class="user-data">Age: {{ user.age }}</span>
+  <span class="user-data">E-mail: {{ user.email }}</span>
+  <span class="user-data">Address: {{ user.address }}</span>
+  <span class="user-data">Joined in: {{ user.joined }}</span>
+</div>
+<mat-divider></mat-divider>
+<div class="user-options-list">
+  <mat-list>
+    <mat-list-item>
+      <span matListItemTitle class="user-options-list-title">Subscription Status</span>
+    </mat-list-item>
+    <div class="user-options">
+      <span class="user-options-list-line"><a routerLink="/user/rewards" style="text-decoration: none; color: black">Rewards</a></span>
+      <span class="user-options-list-line"><a routerLink="/user/subscription" style="text-decoration: none; color: black">Manage subscription</a></span>
+    </div>
+    <mat-list-item>
+      <span class="user-options-list-title">Account</span>
+    </mat-list-item>
+    <div class="user-options">
+      <span class="user-options-list-line"><a routerLink="/user/settings" style="text-decoration: none; color: black">Settings</a></span>
+      <span class="user-options-list-line"><a routerLink="/user/license" style="text-decoration: none; color: black">Driver's License</a></span>
+      <span class="user-options-list-line"><a routerLink="/user/insurance" style="text-decoration: none; color: black">Insurance</a></span>
+      <span class="user-options-list-line"><a>More Information</a></span>
+    </div>
+    <mat-list-item>
+      <span matListItemTitle class="user-options-list-title">Customer Support</span>
+    </mat-list-item>
+    <div class="user-options">
+      <span  class="user-options-list-line"><a routerLink="/faq" style="text-decoration: none; color: black">FAQ</a></span>
+      <span  class="user-options-list-line"><a routerLink="support" style="text-decoration: none; color: black">Chat with support</a></span>
+    </div>
+  </mat-list>
+</div>
+

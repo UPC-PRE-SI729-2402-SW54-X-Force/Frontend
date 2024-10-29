@@ -30,7 +30,8 @@ export class UserComponent implements OnInit {
     this.userService.setResourceEndPoint('/users2');
   }
   ngOnInit(): void {
-    this.getUserById(1);
+    const userId = Number(localStorage.getItem('userId'));
+    this.getUserById(userId);
   }
 
   private getUserById(id:number){
