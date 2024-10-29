@@ -1,12 +1,10 @@
 <div class="user-data-display">
-  <span class="user-data" style="font-weight: bold">{{ user.name }}</span>
-  <img src="{{user.pfp}}" class="user-pfp" alt="user-profile-pfp">
-  <span class="user-data">Age: {{ user.age }}</span>
-  <span class="user-data">E-mail: {{ user.email }}</span>
-  <span class="user-data">Address: {{ user.address }}</span>
-  <span class="user-data">Joined in: {{ user.joined }}</span>
+  <span class="user-data" style="font-weight: bold">{{ owner.name }}</span>
+  <img src="{{owner.urlPhoto}}" class="user-pfp" alt="user-profile-pfp">
+  <span class="user-data">E-mail: {{ owner.email }}</span>
+  <span class="user-data">Address: {{ owner.address }}</span>
 </div>
-<mat-divider></mat-divider>
+<mat-divider [vertical]="true" ></mat-divider>
 <div class="user-options-list">
   <mat-list>
     <mat-list-item>

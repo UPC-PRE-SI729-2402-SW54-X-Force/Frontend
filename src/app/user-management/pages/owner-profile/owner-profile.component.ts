@@ -19,9 +19,23 @@ import {OwnerService} from "../../services/owner.service";
   styleUrl: './owner-profile.component.css'
 })
 export class OwnerProfileComponent implements OnInit {
-  owner : Owner;
+
+  owner: Owner;
+
   constructor(private ownerService: OwnerService) {
-    this.owner = {} as Owner;
+    this.owner = new Owner();
+    this.ownerService.setResourceEndPoint('/owners')
   }
+
   ngOnInit(): void {
+    const ownerId = Number(localStorage.getItem('userId'));
+    this.getOwnerById(ownerId);
+  }
+
+  private getOwnerById(id: number) {
+    return this.ownerService.getById(id).subscribe((data: Owner) => {
+      this.owner = data;
+    });
+  }
+
 }
