@@ -39,7 +39,7 @@ export class LoginFormComponent {
         localStorage.setItem('userRole', 'arrendatario');
         this.router.navigate(['/home']);
       } else {
-
+        // Intentar con el endpoint de "dueños de vehículos"
         this.userService.setResourceEndPoint('/users1');
         this.userService.getAll().subscribe((users: any[]) => {
           user = users.find((u: any) => u.email === this.email && u.password === this.password);

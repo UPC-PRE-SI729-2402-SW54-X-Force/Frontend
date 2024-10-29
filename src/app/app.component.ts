@@ -22,7 +22,6 @@ export class AppComponent {
   options = [
     {icon:'', path: '/offers', title: 'Offers'},
     {icon:'', path: '/about', title: 'About Us'},
-    {icon:'', path: '/community', title: 'Community'},
     {icon:'', path: '/resources', title: 'Resources'},
     {icon:'', path:'/work', title: 'Work With Us'},
     {icon:'', path: '/leasing-info', title: 'Leasing Information'},

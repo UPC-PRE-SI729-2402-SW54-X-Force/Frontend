@@ -5,7 +5,7 @@ import {UsersService} from "../../services/users.service";
 import {Subscription} from "rxjs";
 
 @Component({
-  selector: 'app-settings',
+  selector: 'app-edit-data',
   standalone: true,
   imports: [
     UserDataEditComponent
