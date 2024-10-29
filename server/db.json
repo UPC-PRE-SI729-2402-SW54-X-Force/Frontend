@@ -171,7 +171,7 @@
       "subtitle": "Subtitle 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "status": "Enabled",
-      "destination": "Lima, Perú",
+      "destination": "Cercado de Lima, Lima, Perú",
       "date": "2024-10-26",
       "insurance": "with insurance",
       "premium": "basic"
@@ -187,7 +187,7 @@
       "subtitle": "Subtitle 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "status": "Enabled",
-      "destination": "Lima, Perú",
+      "destination": "Surco, Lima, Perú",
       "date": "2024-11-02",
       "insurance": "without insurance",
       "premium": "premium"
@@ -203,7 +203,7 @@
       "subtitle": "Subtitle 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "status": "Enabled",
-      "destination": "Lima, Perú",
+      "destination": "Barranco, Lima, Perú",
       "date": "2024-10-28",
       "insurance": "with insurance",
       "premium": "basic"
@@ -219,7 +219,7 @@
       "subtitle": "Subtitle 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "status": "Enabled",
-      "destination": "Lima, Perú",
+      "destination": "Miraflores, Lima, Perú",
       "date": "2024-11-05",
       "insurance": "without insurance",
       "premium": "premium"
@@ -235,7 +235,7 @@
       "subtitle": "Subtitle 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "status": "Enabled",
-      "destination": "Lima, Perú",
+      "destination": "Jesús María, Lima, Perú",
       "date": "2024-10-30",
       "insurance": "with insurance",
       "premium": "basic"
@@ -251,7 +251,7 @@
       "subtitle": "Subtitle 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "status": "Enabled",
-      "destination": "Lima, Perú",
+      "destination": "La Victoria, Lima, Perú",
       "date": "2024-11-01",
       "insurance": "without insurance",
       "premium": "basic"

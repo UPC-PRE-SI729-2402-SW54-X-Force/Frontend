@@ -1,15 +1,19 @@
 <div class="offers-container">
   <div class="sidebar">
-    <!-- Filtro por Destino -->
+
     <mat-form-field appearance="outline">
       <mat-label>Destination</mat-label>
-      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" />
+      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" (ngModelChange)="onDestinationChange($event)" />
       <button mat-icon-button matSuffix aria-label="Clear" *ngIf="destination" (click)="destination=''">
         <mat-icon>clear</mat-icon>
       </button>
+      <button mat-icon-button matSuffix aria-label="Open Map" (click)="openMap()">
+        <mat-icon>map</mat-icon>
+      </button>
     </mat-form-field>
 
-    <!-- Filtro por Fecha -->
+
+
     <mat-form-field appearance="outline">
       <mat-label>Date</mat-label>
       <input matInput [matDatepicker]="picker" [(ngModel)]="date" (dateChange)="onDateChange($event.value)" />
@@ -17,15 +21,20 @@
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
-    <!-- Filtro por Modelo de Auto -->
+
     <mat-form-field appearance="outline">
       <mat-label>Model</mat-label>
       <input matInput [(ngModel)]="modelFilter" placeholder="e.g., Honda, Toyota" (ngModelChange)="onModelFilterChange($event)" />
     </mat-form-field>
 
-    <!-- Checkboxes de Seguros y Premium (sin funcionalidad) -->
-    <mat-checkbox>Travel with insurance</mat-checkbox>
-    <mat-checkbox>Exclude premium offers</mat-checkbox>
+
+
+
+    <mat-checkbox [(ngModel)]="insuranceFilter" (change)="applyFilters()">Travel with insurance</mat-checkbox>
+
+
+    <mat-checkbox [(ngModel)]="excludePremiumFilter" (change)="applyFilters()">Exclude premium offers</mat-checkbox>
+
   </div>
 
   <div class="offers-list">
@@ -33,7 +42,7 @@
     <div class="offers-grid">
       <div class="card" *ngFor="let offer of filteredOffers">
 
-        <!-- Etiqueta de "Premium" en la esquina superior derecha -->
+
         <div *ngIf="offer.premium === 'premium'" class="premium-badge">Premium</div>
 
         <div class="card-content">
