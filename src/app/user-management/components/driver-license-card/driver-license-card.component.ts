@@ -24,7 +24,12 @@ export class DriverLicenseCardComponent implements OnInit{
     this.user = new User();
   }
   ngOnInit(): void {
-    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
+    const userId = Number(localStorage.getItem('userId'));
+    this.subscription = this.getUserById(userId);
+  }
+
+  private getUserById(id : number){
+    return this.userService.getById(id).subscribe((data: User) =>{
       this.user = data;
     });
   }

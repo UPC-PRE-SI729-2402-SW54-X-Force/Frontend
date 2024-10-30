@@ -42,7 +42,12 @@ export class ResourcesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.subscription = this.resourcesService.getResources().subscribe((data: Resource[]) => {
+    this.getResources();
+  }
+
+  private getResources(){
+    // @ts-ignore
+    return this.resourcesService.getAll().subscribe((data: Resource[])=>{
       this.resources = data;
     });
   }

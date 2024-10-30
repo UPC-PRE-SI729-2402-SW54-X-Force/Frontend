@@ -27,11 +27,17 @@ export class UserComponent implements OnInit {
   subscription!: Subscription;
   constructor(private userService: UsersService) {
     this.user = new User();
+    this.userService.setResourceEndPoint('/users2');
   }
   ngOnInit(): void {
-    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
+    const userId = Number(localStorage.getItem('userId'));
+    this.getUserById(userId);
+  }
+
+  private getUserById(id:number){
+    return this.userService.getById(id).subscribe((data: User) =>{
       this.user = data;
-    });
+    })
   }
 
 }
