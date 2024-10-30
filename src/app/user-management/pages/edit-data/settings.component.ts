@@ -1,0 +1,63 @@
+import {Component, OnInit} from '@angular/core';
+import {UserDataEditComponent} from "../../components/user-data-edit/user-data-edit.component";
+import {User} from "../../model/user.entity";
+import {UsersService} from "../../services/users.service";
+import {Subscription} from "rxjs";
+
+@Component({
+  selector: 'app-edit-data',
+  standalone: true,
+  imports: [
+    UserDataEditComponent
+  ],
+  templateUrl: './settings.component.html',
+  styleUrl: './settings.component.css'
+})
+export class SettingsComponent implements OnInit{
+  //Attributes
+  userData: User;
+  subscription!: Subscription;
+
+  constructor(private userService: UsersService) {
+    this.userData = new User();
+    this.userService.setResourceEndPoint('/users2');
+  }
+
+  ngOnInit(): void {
+    this.subscription = this.getUserById(1);
+  }
+
+  private getUserById(id:number){
+    return this.userService.getById(id).subscribe((data:User ) =>{
+      this.userData = data;
+    });
+  }
+
+  private updateUser(): void {
+    let userToUpdate: User = this.userData;
+    this.userService.update(userToUpdate.id, userToUpdate)
+      .subscribe((response: any) => {
+        this.userData = response;
+      });
+  }
+
+  onUserNameUpdated(user: User) {
+    this.userData.name = user.name;
+    this.updateUser();
+  }
+
+  onUserEmailUpdated(user: User) {
+    this.userData.email = user.email;
+    this.updateUser();
+  }
+
+  onUserAddressUpdated(user: User) {
+    this.userData.address = user.address;
+    this.updateUser();
+  }
+
+  onUserPfpUpdated(user: User) {
+    this.userData.pfp = user.pfp;
+    this.updateUser();
+  }
+}

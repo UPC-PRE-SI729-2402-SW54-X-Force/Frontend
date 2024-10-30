@@ -1,0 +1,88 @@
+<ng-container *ngIf="editLicenseMode; else editModeLicense">
+  <form (submit)="onEditLicenseSubmit()" #editLicenseForm="ngForm" class="form-row">
+    <table>
+      <tr>
+        <td>
+          <mat-form-field>
+            <input matInput placeholder="Surname" name="licenseType" required [(ngModel)]="license.surname" [readonly]="!editLicenseMode">
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field>
+            <input matInput placeholder="Name" name="licenseExpiryDate" required [(ngModel)]="license.name" [readonly]="!editLicenseMode">
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <mat-form-field style="width: 100%">
+        <input matInput placeholder="License Number without Q" name="licenseNumber" maxlength="8" required [(ngModel)]="license.id" [readonly]="!editLicenseMode">
+      </mat-form-field>
+    </p>
+    <table>
+      <tr>
+        <td>
+          <mat-form-field>
+            <mat-label>License Class</mat-label>
+            <mat-select required [(ngModel)]="license.class" name="licenseClass" >
+              <mat-option *ngFor="let licenseClass of licenseClasses" [value]="licenseClass.value">
+                {{licenseClass.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field>
+            <mat-label>License Category</mat-label>
+            <mat-select [formControl]="categoryControl" required [(ngModel)]="license.category">
+              <mat-option>License Category</mat-option>
+              @for (group of licenseCategories; track group){
+                <mat-optgroup [label] = "group.name"
+                              [disabled]="group.disabled">
+                  @for (licenseCategory of group.licenseCategory; track licenseCategory){
+                    <mat-option [value]="licenseCategory.value">
+                      {{licenseCategory.viewValue}}
+                    </mat-option>
+                  }
+                </mat-optgroup>
+              }
+            </mat-select>
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <p>
+      <mat-form-field style="width: 100%">
+        <mat-label>Issue date</mat-label>
+        <input matInput [matDatepicker]="issueDatePicker" [(ngModel)]="license.issueDate" name="issueDate">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="issueDatePicker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #issueDatePicker></mat-datepicker>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field style="width: 100%">
+        <mat-label>Expiration date</mat-label>
+        <input matInput [matDatepicker]="expirationDatePicker" [(ngModel)]="license.expirationDate" name="expirationDate">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="expirationDatePicker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #expirationDatePicker></mat-datepicker>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field style="width: 100%">
+        <input matInput placeholder="License Image URL" name="licenseImgUrl" required [(ngModel)]="license.urlImage" [readonly]="!editLicenseMode">
+      </mat-form-field>
+    </p>
+    <button mat-raised-button color="primary">Confirm Update</button>
+    <button mat-raised-button color="warn" (click)="onCancelEditLicense()">Cancel</button>
+  </form>
+</ng-container>
+<ng-template #editModeLicense>
+  <button mat-raised-button color="primary" (click)="onEditLicense()">Update license</button>
+</ng-template>
+

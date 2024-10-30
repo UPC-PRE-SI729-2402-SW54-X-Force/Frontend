@@ -1,0 +1,50 @@
+.main-container{
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+.card-subscription-container{
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #F8D9BD;
+  gap: 50px;
+  width: fit-content;
+}
+.subscription-card{
+  width: 300px;
+  padding: 20px;
+  height: 400px;
+  justify-content: space-between;
+}
+.price-container {
+  display: flex;
+  color: #3c3c3c;
+  align-items: baseline;
+}
+.price-container h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 10px 0 10px !important;
+}
+
+.price-container h1, .price-container p {
+  margin: 0;
+}
+.subscription-button{
+  background-color: #E67E22;
+  border-radius: 10px;
+  color: white;
+  width: 50%;
+}
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-type-text{
+  font-size: 50px;
+  color: #3c3c3c;
+  margin: 10px;
+}
