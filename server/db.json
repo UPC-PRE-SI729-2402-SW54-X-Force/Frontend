@@ -118,81 +118,99 @@
   "offers": [
     {
       "id": 1,
-      "owner": "Anderson Díaz",
-      "car": {
-        "model": "Honda Creta",
-        "year": 2022,
-        "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png"
-      },
+      "user_id": 1,
+      "car": "Honda",
+      "model": "Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
       "title": "Title 1",
       "subtitle": "Subtitle 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Cercado de Lima, Lima, Perú",
+      "date": "2024-10-26",
+      "insurance": "with insurance",
+      "premium": "basic"
     },
     {
       "id": 2,
-      "owner": "Nicolás Davila",
-      "car": {
-        "model": "Subaru Outback",
-        "year": 2021,
-        "image": "https://i.postimg.cc/ncpgVs3w/car-2.png"
-      },
+      "user_id": 2,
+      "car": "Subaru",
+      "model": "Outback",
+      "year": 2021,
+      "image": "https://i.postimg.cc/ncpgVs3w/car-2.png",
       "title": "Title 2",
       "subtitle": "Subtitle 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Surco, Lima, Perú",
+      "date": "2024-11-02",
+      "insurance": "without insurance",
+      "premium": "premium"
     },
     {
       "id": 3,
-      "owner": "Sebastián Ramírez",
-      "car": {
-        "model": "Honda Creta",
-        "year": 2022,
-        "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png"
-      },
+      "user_id": 3,
+      "car": "Honda",
+      "model": "Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
       "title": "Title 3",
       "subtitle": "Subtitle 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Barranco, Lima, Perú",
+      "date": "2024-10-28",
+      "insurance": "with insurance",
+      "premium": "basic"
     },
     {
       "id": 4,
-      "owner": "Sebastián Ramírez",
-      "car": {
-        "model": "Subaru Outback",
-        "year": 2021,
-        "image": "https://i.postimg.cc/ncpgVs3w/car-2.png"
-      },
+      "user_id": 4,
+      "car": "Subaru",
+      "model": "Outback",
+      "year": 2021,
+      "image": "https://i.postimg.cc/ncpgVs3w/car-2.png",
       "title": "Title 4",
       "subtitle": "Subtitle 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Miraflores, Lima, Perú",
+      "date": "2024-11-05",
+      "insurance": "without insurance",
+      "premium": "premium"
     },
     {
       "id": 5,
-      "owner": "Nicolás Davila",
-      "car": {
-        "model": "Subaru Outback",
-        "year": 2021,
-        "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png"
-      },
-      "title": "Title 5",
-      "subtitle": "Subtitle 5",
+      "user_id": 5,
+      "car": "Honda",
+      "model": "Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
+      "title": "Title 3",
+      "subtitle": "Subtitle 3",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "Jesús María, Lima, Perú",
+      "date": "2024-10-30",
+      "insurance": "with insurance",
+      "premium": "basic"
     },
     {
       "id": 6,
-      "owner": "Anderson Díaz",
-      "car": {
-        "model": "Honda Creta",
-        "year": 2022,
-        "image": "https://i.postimg.cc/ncpgVs3w/car-2.png"
-      },
-      "title": "Title 6",
-      "subtitle": "Subtitle 6",
+      "user_id": 6,
+      "car": "Subaru",
+      "model": "Outback",
+      "year": 2021,
+      "image": "https://i.postimg.cc/ncpgVs3w/car-2.png",
+      "title": "Title 4",
+      "subtitle": "Subtitle 4",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-      "status": "Enabled"
+      "status": "Enabled",
+      "destination": "La Victoria, Lima, Perú",
+      "date": "2024-11-01",
+      "insurance": "without insurance",
+      "premium": "basic"
     }
   ]
 }
