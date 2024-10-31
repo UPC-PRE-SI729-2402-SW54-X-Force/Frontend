@@ -1,1 +1,7 @@
-<p>car-list works!</p>
+<div class="vehicle-list">
+  <button mat-flat-button style="position: absolute; top: 70px; right: 30px;" (click)="openAddVehicleDialog()">
+    Add
+  </button>
+
+  <app-car-item *ngFor="let vehicle of vehicles" [vehicle]="vehicle"></app-car-item>
+</div>

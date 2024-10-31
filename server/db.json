@@ -52,12 +52,30 @@
   "vehicles": [
     {
       "id": 101,
-      "userId": 10,
+      "userId": 1,
       "vehicleModel": "Toyota Corolla",
       "vehicleManufacturingYear": 2023,
-      "vehicleImageURL": "https://example.com/toyota-corolla.jpg",
+      "vehicleImageURL": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
       "vehicleStatus": "disponible",
       "vehicleInsurance": "Aseguradora X"
+    },
+    {
+      "id": 102,
+      "userId": 1,
+      "vehicleModel": "Toyota Fortuner",
+      "vehicleManufacturingYear": 2020,
+      "vehicleImageURL": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
+      "vehicleStatus": "conservado",
+      "vehicleInsurance": "contra accidentes y robos"
+    },
+    {
+      "id": 103,
+      "userId": 1,
+      "vehicleModel": "Hyundai Creta",
+      "vehicleManufacturingYear": 2025,
+      "vehicleImageURL": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
+      "vehicleStatus": "Disponible",
+      "vehicleInsurance": "Rimac Seguros"
     }
   ],
   "licenses": [
