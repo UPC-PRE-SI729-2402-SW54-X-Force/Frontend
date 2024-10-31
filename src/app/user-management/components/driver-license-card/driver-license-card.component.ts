@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from "../../model/user.entity";
-import {Subscription} from "rxjs";
-import {UsersService} from "../../services/users.service";
 import {MatCard, MatCardContent} from "@angular/material/card";
 import {DatePipe, NgForOf} from "@angular/common";
+import {License} from "../../model/license.entity";
+import {LicenseService} from "../../services/license.service";
 
 @Component({
   selector: 'app-driver-license-card',
@@ -17,20 +16,25 @@ import {DatePipe, NgForOf} from "@angular/common";
   templateUrl: './driver-license-card.component.html',
   styleUrl: './driver-license-card.component.css'
 })
-export class DriverLicenseCardComponent implements OnInit{
-  user: User;
-  subscription!: Subscription;
-  constructor(private userService: UsersService) {
-    this.user = new User();
-  }
-  ngOnInit(): void {
-    const userId = Number(localStorage.getItem('userId'));
-    this.subscription = this.getUserById(userId);
+export class DriverLicenseCardComponent implements OnInit {
+  license: License = {} as License;
+
+  constructor(private licenseService: LicenseService) {
   }
 
-  private getUserById(id : number){
-    return this.userService.getById(id).subscribe((data: User) =>{
-      this.user = data;
+  ngOnInit(): void {
+    const userId: number = Number(localStorage.getItem('userId'));
+    this.getLicenseByUserId(userId);
+  }
+
+  private getLicenseByUserId(id: number): void {
+    this.licenseService.getLicenseByUserId(id).subscribe({
+      next: (license: License): void => {
+        this.license = license;
+      },
+      error: (error: any): void => {
+        console.error(error);
+      }
     });
   }
 }

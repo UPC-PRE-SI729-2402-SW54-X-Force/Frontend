@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { OwnerService } from './owner.service';
+import { LicenseService } from './license.service';
 
-describe('OwnerService', () => {
-  let service: OwnerService;
+describe('LicenseService', () => {
+  let service: LicenseService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(OwnerService);
+    service = TestBed.inject(LicenseService);
   });
 
   it('should be created', () => {

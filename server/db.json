@@ -1,5 +1,5 @@
 {
-  "owners": [
+  "users": [
     {
       "id": 1,
       "name": "Joe Doe",
@@ -7,7 +7,8 @@
       "email": "u202220033@upc.edu.pe",
       "address": "C. Condesa de Lemos 157",
       "password": "123456",
-      "urlPhoto": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png"
+      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
+      "userType": "dueño"
     },
     {
       "id": 2,
@@ -15,78 +16,62 @@
       "email": "jamir@gmail.com",
       "address": "Av. Universitaria",
       "password": "123456",
-      "urlPhoto": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png"
-    }
-  ],
-  "tenants": [
+      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png"
+    },
     {
-      "id": 1,
+      "id": 3,
       "name": "Joe Doe",
       "age": 36,
       "email": "u202220033@upc.edu.pe",
       "address": "C. Condesa de Lemos 157",
       "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
       "joined": "2021-01-01",
-      "password": "123456",
-      "license": [
-        {
-          "id": "87569867",
-          "surname": "Doe",
-          "name": "Joe",
-          "licenseNumber": "Q87569867",
-          "class": "A",
-          "expirationDate": "2027-02-01",
-          "issueDate": "2021-02-01",
-          "category": "A3",
-          "urlImage": "https://citamedicperu.com/wp-content/uploads/2021/08/licencia-citamedic.webp"
-        }
-      ]
+      "password": "123456"
     },
     {
-      "id": 2,
+      "id": 4,
       "name": "Jaime Reyes",
       "age": 16,
       "email": "youdata@gmail.com",
       "address": "San georgia",
       "pfp": "https://media.istockphoto.com/id/1051202402/photo/portrait-of-smiling-businessman-holding-tablet-and-making-ok-sign.jpg?s=612x612&w=0&k=20&c=kyiOeGPmI2aPzK9V1WY7ZTABtEQi5nvm12hcz3ccmc0=",
       "joined": "2021-01-02",
-      "password": "123456",
-      "license": [
-        {
-          "id": "87742867",
-          "surname": "Reyes",
-          "name": "Jaime",
-          "licenseNumber": "Q87742867",
-          "class": "A",
-          "expirationDate": "2027-02-01",
-          "issueDate": "2021-02-01",
-          "category": "A1",
-          "urlImage": "https://citylimits.org/wp-content/uploads/2021/05/Standard-NJ-Driver-License.jpg"
-        }
-      ]
+      "password": "123456"
     },
     {
-      "id": 3,
+      "id": 5,
       "name": "Abigail Doe",
       "age": 46,
       "email": "pepnsa@gmail.com",
       "address": "San Miguel",
       "pfp": "https://st2.depositphotos.com/1144472/7360/i/450/depositphotos_73608199-stock-photo-woman-showing-thumbs-up-gesture.jpg",
       "joined": "2021-01-03",
-      "password": "123456",
-      "license": [
-        {
-          "id": "14149867",
-          "surname": "Doe",
-          "name": "Abigail",
-          "licenseNumber": "Q14149867",
-          "class": "A",
-          "expirationDate": "2027-02-01",
-          "issueDate": "2021-02-01",
-          "category": "A2",
-          "urlImage": "https://www.breveteya.pe/wp-content/uploads/2023/10/como-saque-mi-licencia-de-conducir-a1-en-solo-2-dias.jpg"
-        }
-      ]
+      "password": "123456"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": 101,
+      "userId": 10,
+      "vehicleModel": "Toyota Corolla",
+      "vehicleManufacturingYear": 2023,
+      "vehicleImageURL": "https://example.com/toyota-corolla.jpg",
+      "vehicleStatus": "disponible",
+      "vehicleInsurance": "Aseguradora X"
+    }
+  ],
+  "licenses": [
+    {
+      "id": 201,
+      "userId": 1,
+      "name": "Juan",
+      "surname": "Pérez",
+      "licenseNumber": "ABC123456",
+      "licenseClass": "B",
+      "expirationDate": "2025-12-31",
+      "issueDate": "2020-01-01",
+      "licenseCategory": "automóvil",
+      "licenseImageUrl": "https://example.com/licencia.jpg"
     }
   ],
   "resources": [
@@ -211,6 +196,28 @@
       "date": "2024-11-01",
       "insurance": "without insurance",
       "premium": "basic"
+    },
+    {
+      "id": 7,
+      "vehicleId": 101,
+      "userId": 1,
+      "title": "Oferta especial",
+      "subtitle": "Descuento del 20%",
+      "insurance": "Incluida",
+      "subscription": "Mensual"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 1,
+      "userId": 1,
+      "vehicleId": 101,
+      "offerId": 301,
+      "reservationDate": "2023-11-15",
+      "startDate": "2023-11-20",
+      "endDate": "2023-11-25",
+      "status": "pendiente",
+      "cost": 500
     }
   ]
 }

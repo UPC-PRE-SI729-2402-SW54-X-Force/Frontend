@@ -11,7 +11,7 @@ import { MatDatepicker, MatDatepickerModule } from '@angular/material/datepicker
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
-import { Offer } from './offer.model';
+import { Offer } from './model/offer.model';
 import { DestinationMapComponent } from '../maps/destination-map.component';
 
 @Component({

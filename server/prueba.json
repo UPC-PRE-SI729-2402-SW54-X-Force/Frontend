@@ -73,5 +73,21 @@
       ]
     }
 
+  ],
+  "vehicles": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "model": "Honda Creta",
+      "year": 2022,
+      "image": "https://i.postimg.cc/Gpt1LBm1/car-1.png",
+      "title": "Title 1",
+      "subtitle": "Subtitle 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "status": "Enabled",
+      "premium": "basic",
+      "insurance": "with insurance",
+      "destination": "Lima"
+    }
   ]
 }

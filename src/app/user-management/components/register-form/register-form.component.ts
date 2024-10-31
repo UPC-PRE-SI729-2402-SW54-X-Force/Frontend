@@ -5,7 +5,7 @@ import {MatInput} from "@angular/material/input";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {MatOption, MatSelect} from "@angular/material/select";
 import {FormsModule} from "@angular/forms";
-import {UsersService} from "../../services/users.service";
+import {UserService} from "../../services/user.service";
 import {User} from "../../model/user.entity";
 import {MatSnackBar} from "@angular/material/snack-bar";
 import {Router} from "@angular/router";
@@ -31,28 +31,26 @@ export class RegisterFormComponent {
   email: string = '';
   address: string = '';
   password: string = '';
-  role: string = '';
+  userType: string = '';
 
-  constructor(private userService: UsersService, private snackBar: MatSnackBar, private router: Router) {
+  constructor(private userService: UserService, private snackBar: MatSnackBar, private router: Router) {
   }
 
   onRegister() {
-    if (this.role === 'arrendatario')
-      this.userService.setResourceEndPoint('/users2');
-    else
-      this.userService.setResourceEndPoint('/users1');
 
-
-    const newUser: { password: string; address: string; name: string; id: number; email: string } = {
+    const newUser: { password: string; address: string; name: string; id: number; email: string; userType: string, pfp: string } = {
       id: 0,
       name: this.name,
       email: this.email,
       address: this.address,
-      password: this.password
+      password: this.password,
+      userType: this.userType,
+      pfp: 'https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png'
     };
 
     this.userService.create(newUser).subscribe({
-      next: (response) => {
+
+      next: (response: User) => {
         console.log('Registro exitoso', response);
 
         this.snackBar.open('User registered successfully', 'Close', {
@@ -63,9 +61,10 @@ export class RegisterFormComponent {
       },
       error: (error) => {
         console.log(error);
+        this.snackBar.open('Error registering user.', 'Close', {
+          duration: 3500
+        });
       }
     });
-
-
   }
 }

@@ -14,13 +14,17 @@ import {SubscriptionComponent} from "./user-management/pages/subscription/subscr
 import {SupportComponent} from "./public/pages/support/support.component";
 import {LoginComponent} from "./user-management/pages/login/login.component";
 import {RegisterComponent} from "./user-management/pages/register/register.component";
+import {CarListComponent} from "./car-management/pages/car-list/car-list.component";
+import {TenantListComponent} from "./car-management/pages/tenant-list/tenant-list.component";
 
 export const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'offers', component: OffersComponent},
+  {path: 'vehicles', component: CarListComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'tenants', component: TenantListComponent},
   {path: 'community', component: CommunityComponent},
   {path: 'resources', component: ResourcesComponent},
   {path: 'work', component: WorkComponent},
