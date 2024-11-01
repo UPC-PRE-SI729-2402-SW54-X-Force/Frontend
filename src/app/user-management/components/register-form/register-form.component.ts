@@ -38,14 +38,17 @@ export class RegisterFormComponent {
 
   onRegister() {
 
-    const newUser: { password: string; address: string; name: string; id: number; email: string; userType: string, pfp: string } = {
+    const newUser: { password: string; address: string; name: string; id: number; email: string; userType: string, pfp: string, joined_at: string, age:number } = {
       id: 0,
       name: this.name,
       email: this.email,
       address: this.address,
       password: this.password,
       userType: this.userType,
-      pfp: 'https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png'
+      pfp: 'https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png',
+      joined_at:
+        new Date().toISOString(),
+      age: 45
     };
 
     this.userService.create(newUser).subscribe({
