@@ -7,7 +7,10 @@
       <p><strong>Start Date:</strong> {{ reservation.startDate | date: 'yyyy-MM-dd' }}</p>
       <p><strong>End Date:</strong> {{ reservation.endDate | date: 'yyyy-MM-dd' }}</p>
       <p><strong>Status:</strong> {{ reservation.status }}</p>
-      <button mat-raised-button color="primary" (click)="viewDetails(reservation.id)">View Details</button>
+      <button mat-raised-button color="primary" (click)="reservation.id ? viewDetails(reservation.id) : null">
+        View Details
+      </button>
+
     </div>
   </div>
 
