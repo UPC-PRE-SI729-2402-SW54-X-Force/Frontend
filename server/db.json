@@ -16,7 +16,8 @@
       "email": "jamir@gmail.com",
       "address": "Av. Universitaria",
       "password": "123456",
-      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png"
+      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
+      "userType": "dueño"
     },
     {
       "id": 3,
@@ -26,7 +27,8 @@
       "address": "C. Condesa de Lemos 157",
       "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png",
       "joined": "2021-01-01",
-      "password": "123456"
+      "password": "123456",
+      "userType": "arrendatario"
     },
     {
       "id": 4,
@@ -36,7 +38,8 @@
       "address": "San georgia",
       "pfp": "https://media.istockphoto.com/id/1051202402/photo/portrait-of-smiling-businessman-holding-tablet-and-making-ok-sign.jpg?s=612x612&w=0&k=20&c=kyiOeGPmI2aPzK9V1WY7ZTABtEQi5nvm12hcz3ccmc0=",
       "joined": "2021-01-02",
-      "password": "123456"
+      "password": "123456",
+      "userType": "dueño"
     },
     {
       "id": 5,
@@ -46,16 +49,8 @@
       "address": "San Miguel",
       "pfp": "https://st2.depositphotos.com/1144472/7360/i/450/depositphotos_73608199-stock-photo-woman-showing-thumbs-up-gesture.jpg",
       "joined": "2021-01-03",
-      "password": "123456"
-    },
-    {
-      "id": 6,
-      "name": "José",
-      "email": "jose@gmail.com",
-      "address": "Av. La Molina 2554",
-      "password": "654321",
-      "userType": "dueño",
-      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png"
+      "password": "123456",
+      "userType": "arrendatario"
     }
   ],
   "vehicles": [
