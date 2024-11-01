@@ -1,0 +1,26 @@
+<div class="reservation-form">
+  <h2>Make a Reservation</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="outline">
+      <mat-label>Start Date</mat-label>
+      <input matInput [matDatepicker]="startPicker" [(ngModel)]="reservation.startDate" name="startDate" required />
+      <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+      <mat-datepicker #startPicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>End Date</mat-label>
+      <input matInput [matDatepicker]="endPicker" [(ngModel)]="reservation.endDate" name="endDate" required />
+      <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Cost</mat-label>
+      <input matInput type="number" [(ngModel)]="reservation.cost" name="cost" required />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Submit Reservation</button>
+  </form>
+</div>

@@ -20,7 +20,7 @@ import { DestinationMapComponent } from '../maps/destination-map.component';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule, 
+    RouterModule,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,

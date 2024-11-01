@@ -1,0 +1,17 @@
+<div class="reservation-list">
+  <h2>Your Reservations</h2>
+
+  <div *ngIf="reservations.length > 0; else noReservations">
+    <div *ngFor="let reservation of reservations" class="reservation-item">
+      <h3>Reservation #{{ reservation.id }}</h3>
+      <p><strong>Start Date:</strong> {{ reservation.startDate | date: 'yyyy-MM-dd' }}</p>
+      <p><strong>End Date:</strong> {{ reservation.endDate | date: 'yyyy-MM-dd' }}</p>
+      <p><strong>Status:</strong> {{ reservation.status }}</p>
+      <button mat-raised-button color="primary" (click)="viewDetails(reservation.id)">View Details</button>
+    </div>
+  </div>
+
+  <ng-template #noReservations>
+    <p>No reservations found.</p>
+  </ng-template>
+</div>
