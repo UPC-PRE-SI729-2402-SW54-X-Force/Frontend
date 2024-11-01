@@ -3,6 +3,7 @@ import {MatCard, MatCardContent} from "@angular/material/card";
 import {DatePipe, NgForOf} from "@angular/common";
 import {License} from "../../model/license.entity";
 import {LicenseService} from "../../services/license.service";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-driver-license-card',
@@ -11,7 +12,8 @@ import {LicenseService} from "../../services/license.service";
     MatCard,
     DatePipe,
     MatCardContent,
-    NgForOf
+    NgForOf,
+    TranslateModule
   ],
   templateUrl: './driver-license-card.component.html',
   styleUrl: './driver-license-card.component.css'

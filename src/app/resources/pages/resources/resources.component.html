@@ -1,25 +1,83 @@
 <div class="resources-container">
-  @for (resource of resources; track resource.title) {
     <mat-card class="example-card" appearance="outlined">
       <div class="resource-content">
-        <img mat-card-sm-image [ngSrc]="resource.image" [alt]="resource.title" width="30" height="100"
+        <img mat-card-sm-image ngSrc="../public/assets/images/resources1.jpg" alt="image" width="30" height="100"
              class="resource-image">
         <div class="resource-text">
           <mat-card-header>
-            <mat-card-title>{{ resource.title }}</mat-card-title>
+            <mat-card-title>{{'resources.safetyTips.title' | translate }}</mat-card-title>
           </mat-card-header>
           <br>
           <mat-card-content>
-            {{ resource.description }}
+            {{ 'resources.safetyTips.description' | translate }}
           </mat-card-content>
           <mat-card-actions>
-            <a [href]="resource.url" target="_blank">
+            <a href="http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf" target="_blank">
             <button mat-raised-button color="primary">View</button>
             </a>
           </mat-card-actions>
         </div>
       </div>
     </mat-card>
-  }
+    <mat-card class="example-card" appearance="outlined">
+      <div class="resource-content">
+        <img mat-card-sm-image ngSrc="../public/assets/images/resources2.jpg" alt="imagen" width="30" height="100"
+             class="resource-image">
+        <div class="resource-text">
+          <mat-card-header>
+            <mat-card-title>{{ 'resources.necessaryDocumentation.title' | translate }}</mat-card-title>
+          </mat-card-header>
+          <br>
+          <mat-card-content>
+            {{ 'resources.necessaryDocumentation.description' | translate }}
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf" target="_blank">
+              <button mat-raised-button color="primary">View</button>
+            </a>
+          </mat-card-actions>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <div class="resource-content">
+        <img mat-card-sm-image ngSrc="../public/assets/images/resources3.jpeg" alt="imagen" width="30" height="100"
+             class="resource-image">
+        <div class="resource-text">
+          <mat-card-header>
+            <mat-card-title>{{ 'resources.popularTouristDestinations.title' | translate }}</mat-card-title>
+          </mat-card-header>
+          <br>
+          <mat-card-content>
+            {{ 'resources.popularTouristDestinations.description' | translate }}
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf" target="_blank">
+              <button mat-raised-button color="primary">View</button>
+            </a>
+          </mat-card-actions>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="example-card" appearance="outlined">
+      <div class="resource-content">
+        <img mat-card-sm-image ngSrc="../public/assets/images/resources4.jpg" alt="resource.title" width="30" height="100"
+             class="resource-image">
+        <div class="resource-text">
+          <mat-card-header>
+            <mat-card-title>{{ 'resources.scenicRoutes.title' | translate }}</mat-card-title>
+          </mat-card-header>
+          <br>
+          <mat-card-content>
+            {{ 'resources.scenicRoutes.description' | translate }}
+          </mat-card-content>
+          <mat-card-actions>
+            <a href="http://transparencia.mtc.gob.pe/idm_docs/normas_legales/1_1_56.pdf" target="_blank">
+              <button mat-raised-button color="primary">View</button>
+            </a>
+          </mat-card-actions>
+        </div>
+      </div>
+    </mat-card>
 </div>
 

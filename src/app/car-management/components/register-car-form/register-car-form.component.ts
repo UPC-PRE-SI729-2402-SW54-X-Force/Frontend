@@ -5,6 +5,7 @@ import {MatFormField} from "@angular/material/form-field";
 import {MatInput} from "@angular/material/input";
 import {MatButton} from "@angular/material/button";
 import {MatDialogContent, MatDialogRef} from "@angular/material/dialog";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-register-car-form',
@@ -14,7 +15,8 @@ import {MatDialogContent, MatDialogRef} from "@angular/material/dialog";
     MatFormField,
     MatInput,
     MatButton,
-    MatDialogContent
+    MatDialogContent,
+    TranslateModule
   ],
   templateUrl: './register-car-form.component.html',
   styleUrl: './register-car-form.component.css'

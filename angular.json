@@ -23,8 +23,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
+                "input": "public/assets/i18n",
+                "output": "assets/i18n"
               },
               {
                 "glob": "**/*",

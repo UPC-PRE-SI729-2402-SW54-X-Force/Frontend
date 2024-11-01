@@ -1,31 +1,31 @@
 <mat-dialog-content>
   <form (submit)="onSubmit()" class="form-row">
     <mat-form-field class="form-field">
-      <input matInput [(ngModel)]="vehicle.vehicleModel" name="vehicleModel" placeholder="Modelo del vehículo" required>
+      <input matInput [(ngModel)]="vehicle.vehicleModel" name="vehicleModel" placeholder="{{'vehicleForm.modelPlaceholder' | translate}}" required>
     </mat-form-field>
 
     <mat-form-field class="form-field">
       <input matInput [(ngModel)]="vehicle.vehicleManufacturingYear" name="vehicleManufacturingYear"
-             placeholder="Año de fabricación" required type="number">
+             placeholder="{{'vehicleForm.yearPlaceholder' | translate}}" required type="number">
     </mat-form-field>
 
     <mat-form-field class="form-field">
-      <input matInput [(ngModel)]="vehicle.vehicleImageURL" name="vehicleImageURL" placeholder="URL de imagen" required>
+      <input matInput [(ngModel)]="vehicle.vehicleImageURL" name="vehicleImageURL" placeholder="{{'vehicleForm.imageURLPlaceholder' | translate}}" required>
     </mat-form-field>
 
     <mat-form-field class="form-field">
-      <input matInput [(ngModel)]="vehicle.vehicleStatus" name="vehicleStatus" placeholder="Estado del vehículo"
+      <input matInput [(ngModel)]="vehicle.vehicleStatus" name="vehicleStatus" placeholder="{{'vehicleForm.statusPlaceholder' | translate}}"
              required>
     </mat-form-field>
 
     <mat-form-field class="form-field">
-      <input matInput [(ngModel)]="vehicle.vehicleInsurance" name="vehicleInsurance" placeholder="Seguro del vehículo"
+      <input matInput [(ngModel)]="vehicle.vehicleInsurance" name="vehicleInsurance" placeholder="{{'vehicleForm.insurancePlaceholder' | translate}}"
              required>
     </mat-form-field>
 
     <div style="margin-top: 10px;">
-      <button mat-raised-button color="primary" type="submit">Guardar</button>
-      <button mat-raised-button color="warn" type="button" (click)="onCancel()">Cancelar</button>
+      <button mat-raised-button color="primary" type="submit">{{'vehicleForm.saveButton' | translate}}</button>
+      <button mat-raised-button color="warn" type="button" (click)="onCancel()">{{'vehicleForm.cancelButton' | translate}}</button>
     </div>
   </form>
 </mat-dialog-content>

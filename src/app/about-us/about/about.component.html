@@ -1,51 +1,51 @@
 <body>
 <section id="company-info">
-  <h2 mat-h2>DriveNow</h2>
+  <h2 mat-h2>{{'companyInfo.title' | translate}}</h2>
   <div class="company-info-container" mat-grid-list cols="3" rowHeight="2:1" gutterSize="16px">
     <div class="company-info-item" mat-grid-tile>
-      <h3 mat-h3>Solution Profile</h3>
-      <p>DriveNow es una aplicación desarrollada por el equipo de X Force, que busca servir como puente entre las personas que buscan alquilar autos y quienes desean poner en alquiler el suyo.</p>
+      <h3 mat-h3>{{'companyInfo.profile.title' | translate}}</h3>
+      <p>{{'companyInfo.profile.description' | translate}}</p>
     </div>
     <div class="company-info-item" mat-grid-tile>
-      <h3 mat-h3>Mission</h3>
-      <p>Proporcionar una plataforma accesible y confiable que conecte a propietarios de vehículos con usuarios que necesitan movilidad temporal, mejorando la eficiencia en el uso de automóviles y ofreciendo una alternativa segura y conveniente para la movilidad en Perú.</p>
+      <h3 mat-h3>{{'companyInfo.mission.title' | translate}}</h3>
+      <p>{{'companyInfo.mission.description' | translate}}</p>
     </div>
     <div class="company-info-item" mat-grid-tile>
-      <h3 mat-h3>Vision</h3>
-      <p>Lograr que DriveNow se convierta en la opción preferida para el alquiler temporal de automóviles en las principales ciudades de Perú, maximizando el uso de vehículos subutilizados y generando ingresos adicionales para los propietarios.</p>
+      <h3 mat-h3>{{'companyInfo.vision.title' | translate}}</h3>
+      <p>{{'companyInfo.vision.description' | translate}}</p>
     </div>
   </div>
 </section>
 
 <section id="about-us">
-  <h2 mat-h2>Nuestro Equipo</h2>
+  <h2 mat-h2>{{'aboutUs.title' | translate}}</h2>
   <div class="about-us-container" mat-grid-list cols="3" rowHeight="2:1" gutterSize="16px">
     <div class="about-us-item" mat-grid-tile>
       <img src='https://i.postimg.cc/WzG7KCbJ/perfil.png' alt="Aarón">
-      <h3 mat-h3>Avila Palacios Aarón Alexander</h3>
-      <p>Soy estudiante de Ingeniería de software y estoy cursando el quinto ciclo de la carrera. Tengo 23 años...</p>
+      <h3 mat-h3>{{'aboutUs.members.aaron.name' | translate}}</h3>
+      <p>{{'aboutUs.members.aaron.description' | translate}}</p>
     </div>
     <div class="about-us-item" mat-grid-tile>
       <img src='https://i.postimg.cc/pLjRhBT1/alex-pfp.jpg' alt="Gabriel">
-      <h3 mat-h3>Casas Sanchez Gabriel Alexander</h3>
-      <p>Soy estudiante de Ingeniería de software y estoy cursando el quinto ciclo de la carrera...</p>
+      <h3 mat-h3>{{'aboutUs.members.gabriel.name' | translate}}</h3>
+      <p>{{'aboutUs.members.gabriel.description' | translate}}</p>
     </div>
     <div class="about-us-item" mat-grid-tile>
       <img src="https://i.postimg.cc/Bv6W5cQ0/George-foto.png" alt="George">
-      <h3 mat-h3>Galvan Cerron George Aldo</h3>
-      <p>Soy estudiante de la carrera de Ingenieria de Software, actualmente estoy cursando el 5to semestre en la Universidad Peruana de Ciencias Aplicadas. Cuento con conocimientos en desarrollo backend con los lenguajes de programación, tales como python, C++ y Java.</p>
+      <h3 mat-h3>{{'aboutUs.members.george.name' | translate}}</h3>
+      <p>{{'aboutUs.members.george.description' | translate}}</p>
     </div>
 
     <div class="about-us-item" mat-grid-tile>
       <img src="https://i.postimg.cc/50cSc2Bj/Jamir.jpg" alt="Jamir">
-      <h3 mat-h3>Marzál Pérez Jamir Ángel</h3>
-      <p>Soy estudiante de Ingeniería de Software. Mis principales cualidades son el trabajo en equipo, la escucha activa, ética, creatividad, eficacia y responsabilidad. Tengo conocimientos en lenguajes de programación C++, C# y Python.</p>
+      <h3 mat-h3>{{'aboutUs.members.jamir.name' | translate}}</h3>
+      <p>{{'aboutUs.members.jamir.description' | translate}}</p>
     </div>
 
     <div class="about-us-item" mat-grid-tile>
       <img src="placeholder-image.png" alt="Emilia">
-      <h3 mat-h3>Durán Santander, Emilia Mercedes</h3>
-      <p>Soy estudiante de la carrera de Ingeniería de Software, actualmente en el 6to ciclo en la Universidad Peruana de Ciencias Aplicadas. Cuento con conocimientos técnicos en C++, HTML y Javascript.</p>
+      <h3 mat-h3>{{'aboutUs.members.emilia.name' | translate}}</h3>
+      <p>{{'aboutUs.members.emilia.description' | translate}}</p>
     </div>
 
   </div>
@@ -55,29 +55,29 @@
   <div class="contact-container">
     <!-- Formulario de contacto -->
     <div class="contact-form">
-      <h2 mat-h2>Contáctanos</h2>
+      <h2 mat-h2>{{'contactUs.title' | translate}}</h2>
       <form>
         <mat-form-field appearance="fill">
-          <mat-label>Nombre</mat-label>
+          <mat-label>{{'contactUs.form.name' | translate}}</mat-label>
           <input matInput type="text" id="name" name="name" required>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <mat-label>Presupuesto</mat-label>
+          <mat-label>{{'contactUs.form.budget' | translate}}</mat-label>
           <input matInput type="text" id="budget" name="budget" required>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <mat-label>Correo Electrónico</mat-label>
+          <mat-label>{{'contactUs.form.email' | translate}}</mat-label>
           <input matInput type="email" id="email" name="email" required>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-          <mat-label>Mensaje</mat-label>
+          <mat-label>{{'contactUs.form.message' | translate}}</mat-label>
           <textarea matInput id="message" name="message" rows="4" required></textarea>
         </mat-form-field>
 
-        <button mat-raised-button color="primary" type="submit">Enviar</button>
+        <button mat-raised-button color="primary" type="submit">{{'contactUs.form.submit' | translate}}</button>
       </form>
     </div>
 

@@ -2,11 +2,11 @@
   <mat-card>
     <img [src]="license.licenseUrlImage " alt="user-license" class="license-image">
     <mat-card-content>
-      <h2 style="margin-top: 0px">License Number: {{ license.licenseNumber }}</h2>
-      <p>License expiration date: {{ license.expirationDate | date: 'shortDate' }}</p>
-      <p>License issueDate date: {{ license.issueDate | date: 'shortDate' }}</p>
-      <p>License class: {{ license.licenseClass }}</p>
-      <p>license category: {{ license.licenseCategory }}</p>
+      <h2 style="margin-top: 0px">{{'licenseDisplay.licenseNumber' | translate}}: {{ license.licenseNumber }}</h2>
+      <p>{{'licenseDisplay.licenseExpirationDate' | translate}}: {{ license.expirationDate | date: 'shortDate' }}</p>
+      <p>{{'licenseDisplay.licenseIssueDate' | translate}}: {{ license.issueDate | date: 'shortDate' }}</p>
+      <p>{{'licenseDisplay.licenseClass' | translate}}: {{ license.licenseClass }}</p>
+      <p>{{'licenseDisplay.licenseCategory' | translate}}: {{ license.licenseCategory }}</p>
     </mat-card-content>
   </mat-card>
 </div>

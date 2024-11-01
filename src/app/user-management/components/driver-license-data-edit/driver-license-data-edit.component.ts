@@ -9,6 +9,7 @@ import {MatOptgroup, MatOption, MatSelect} from "@angular/material/select";
 import {group} from "@angular/animations";
 import {MatDatepickerInput, MatDatepickerModule, MatDatepickerToggle} from "@angular/material/datepicker";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
+import {TranslateModule} from "@ngx-translate/core";
 
 interface licenseClass{
   value: string;
@@ -45,7 +46,8 @@ interface licenseCategory{
     MatIconModule,
     MatInputModule,
     MatHint,
-    MatIcon
+    MatIcon,
+    TranslateModule
   ],
   templateUrl: './driver-license-data-edit.component.html',
   styleUrl: './driver-license-data-edit.component.css'

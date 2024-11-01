@@ -26,7 +26,7 @@
       <tr>
         <td>
           <mat-form-field>
-            <mat-label>License Class</mat-label>
+            <mat-label>{{'licenseDisplay.licenseClass' | translate}}</mat-label>
             <mat-select required [(ngModel)]="license.licenseClass" name="licenseClass">
               <mat-option *ngFor="let licenseClass of licenseClasses" [value]="licenseClass.value">
                 {{ licenseClass.viewValue }}
@@ -36,7 +36,7 @@
         </td>
         <td>
           <mat-form-field>
-            <mat-label>License Category</mat-label>
+            <mat-label>{{'licenseDisplay.licenseCategory' | translate}}</mat-label>
             <mat-select [formControl]="categoryControl" required [(ngModel)]="license.licenseCategory">
               <mat-option>License Category</mat-option>
               @for (group of licenseCategories; track group) {
@@ -83,11 +83,11 @@
                [(ngModel)]="license.licenseUrlImage" [readonly]="!editLicenseMode">
       </mat-form-field>
     </p>
-    <button mat-raised-button color="primary">Confirm Update</button>
-    <button mat-raised-button color="warn" (click)="onCancelEditLicense()">Cancel</button>
+    <button mat-raised-button color="primary">{{'licenseDisplay.updateLicense' | translate}}</button>
+    <button mat-raised-button color="warn" (click)="onCancelEditLicense()">{{'licenseDisplay.cancelUpdate' | translate}}</button>
   </form>
 </ng-container>
 <ng-template #editModeLicense>
-  <button mat-raised-button color="primary" (click)="onEditLicense()">Update license</button>
+  <button mat-raised-button color="primary" (click)="onEditLicense()">{{'licenseDisplay.editLicense' | translate}}</button>
 </ng-template>
 

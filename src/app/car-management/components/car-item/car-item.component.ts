@@ -9,6 +9,7 @@ import {
   MatCardTitleGroup
 } from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-car-item',
@@ -21,7 +22,8 @@ import {NgOptimizedImage} from "@angular/common";
     MatCardSubtitle,
     MatCardTitle,
     NgOptimizedImage,
-    MatCardLgImage
+    MatCardLgImage,
+    TranslateModule
   ],
   templateUrl: './car-item.component.html',
   styleUrl: './car-item.component.css'

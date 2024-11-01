@@ -1,3 +1,217 @@
 {
-
+  "OFFERS": {
+    "TITLE": "Traveling? Rent a car!",
+    "FILTER_DESTINATION": "Destination",
+    "FILTER_DATE": "Date",
+    "FILTER_MODEL": "Model",
+    "FILTER_INSURANCE": "Travel with insurance",
+    "FILTER_EXCLUDE_PREMIUM": "Exclude premium offers",
+    "PLACEHOLDER_DESTINATION": "Lima, Peru",
+    "MODEL_FILTER_HINT": "e.g., Honda, Toyota",
+    "CARD_PREMIUM_BADGE": "Premium",
+    "CARD_OWNER": "Owner:",
+    "CARD_MODEL": "Model:",
+    "CARD_YEAR": "Year:",
+    "CARD_SUBTITLE": "Subtitle:",
+    "CARD_DESCRIPTION": "Description:",
+    "CARD_DESTINATION": "Destination:",
+    "CARD_BUTTON_ENABLED": "Enabled",
+    "CARD_BUTTON_DISABLED": "Unavailable",
+    "CARD_START_DATE": "Starting"
+  },
+  "companyInfo": {
+    "title": "DriveNow",
+    "profile": {
+      "title": "Solution Profile",
+      "description": "DriveNow is an application developed by the X Force team, aiming to bridge the gap between people looking to rent cars and those who want to rent out their own."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Provide an accessible and reliable platform that connects vehicle owners with users who need temporary mobility, enhancing car usage efficiency and offering a safe and convenient alternative for mobility in Peru."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "Make DriveNow the preferred option for temporary car rentals in major cities in Peru, maximizing the use of underutilized vehicles and generating additional income for owners."
+    }
+  },
+  "aboutUs": {
+    "title": "Our Team",
+    "members": {
+      "aaron": {
+        "name": "Avila Palacios Aarón Alexander",
+        "description": "I am a software engineering student in my fifth semester. I am 23 years old..."
+      },
+      "gabriel": {
+        "name": "Casas Sanchez Gabriel Alexander",
+        "description": "I am a software engineering student in my fifth semester of studies..."
+      },
+      "george": {
+        "name": "Galvan Cerron George Aldo",
+        "description": "I am a Software Engineering student, currently in the 5th semester at UPC. I have backend development skills in programming languages such as Python, C++, and Java."
+      },
+      "jamir": {
+        "name": "Marzál Pérez Jamir Ángel",
+        "description": "I am a Software Engineering student. My main qualities are teamwork, active listening, ethics, creativity, efficiency, and responsibility. I have programming knowledge in C++, C#, and Python."
+      },
+      "emilia": {
+        "name": "Durán Santander, Emilia Mercedes",
+        "description": "I am a Software Engineering student in the 6th semester at UPC. I have technical skills in C++, HTML, and Javascript."
+      }
+    }
+  },
+  "contactUs": {
+    "title": "Contact Us",
+    "form": {
+      "name": "Name",
+      "budget": "Budget",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "socialMedia": {
+      "instagram": "INSTAGRAM",
+      "twitter": "X",
+      "facebook": "FACEBOOK",
+      "linkedin": "LINKEDIN"
+    }
+  },
+  "resources": {
+    "safetyTips": {
+      "title": "Driving Safety Tips",
+      "description": "Tips to maintain safety while driving a rented vehicle, including proper seatbelt use, respecting speed limits, and staying aware of weather conditions."
+    },
+    "necessaryDocumentation": {
+      "title": "Required Documentation for Driving",
+      "description": "Information on necessary documentation for safe and legal driving, including updated licenses, insurance, and more."
+    },
+    "popularTouristDestinations": {
+      "title": "Popular Tourist Destinations",
+      "description": "Explore the most popular tourist spots in the region you can visit during your trip. From beaches to mountains, discover the best places to relax or adventure."
+    },
+    "scenicRoutes": {
+      "title": "Recommended Scenic Routes",
+      "description": "Discover the most scenic routes to drive in your destination. Enjoy landscapes while traveling on roads known for their beauty and tranquility."
+    }
+  },
+  "licenseDisplay": {
+    "licenseNumber": "License Number",
+    "licenseExpirationDate": "License expiration date",
+    "licenseIssueDate": "License issue date",
+    "licenseClass": "License Class",
+    "licenseCategory": "License Category",
+    "editLicense": "Edit License",
+    "updateLicense": "Update license",
+    "confirmUpdate": "Confirm Update",
+    "cancelUpdate": "Cancel"
+  },
+  "userSettings": {
+    "title": "User settings",
+    "changeName": "Change Name",
+    "changeEmail": "Change e-mail",
+    "changeAddress": "Change address",
+    "changePfp": "Change profile picture"
+  },
+  "login": {
+    "title": "DriveNow",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "forgotPassword": "Forgot password?",
+    "register": "Register here"
+  },
+  "register": {
+    "title": "Register",
+    "name": "Name",
+    "email": "Email",
+    "address": "Address",
+    "password": "Password",
+    "registerAs": "Register as",
+    "arrendatario": "Renter",
+    "dueño": "Vehicle Owner",
+    "receiveEmails": "I want to receive emails"
+  },
+  "userDataDisplay": {
+    "name": "Name",
+    "age": "Age",
+    "email": "E-mail",
+    "address": "Address",
+    "joinedAt": "Joined in"
+  },
+  "userOptionsList": {
+    "subscriptionStatus": "Subscription Status",
+    "manageSubscription": "Manage subscription",
+    "account": "Account",
+    "userData": "User Data",
+    "driversLicense": "Driver's License",
+    "insurance": "Insurance",
+    "customerSupport": "Customer Support",
+    "faq": "FAQ",
+    "contactSupport": "Contact support"
+  },
+  "subscriptionPlans": {
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "features": [
+        "Drivenow community",
+        "Limited car access",
+        "Standard waiting time",
+        "Base support",
+        "Drivenow resources"
+      ]
+    },
+    "platinum": {
+      "name": "Platinum",
+      "price": "$10",
+      "features": [
+        "Drivenow community",
+        "Entire fleet access",
+        "Preference waiting time",
+        "Premium support",
+        "Priority offers",
+        "Platinum lock"
+      ]
+    },
+    "golden": {
+      "name": "Golden",
+      "price": "$25",
+      "features": [
+        "Drivenow community",
+        "Verified badge",
+        "Preference waiting time",
+        "Premium support",
+        "Priority offers",
+        "Golden lock",
+        "Reward system"
+      ]
+    },
+    "selectButton": "Select"
+  },
+  "license": {
+    "currentLicense": "Current License"
+  },
+  "vehicleCard": {
+    "imageAlt": "Vehicle image",
+    "model": "Model",
+    "year": "Year",
+    "insurance": "Insurance",
+    "status": "Status"
+  },
+  "vehicleForm": {
+    "modelPlaceholder": "Vehicle model",
+    "yearPlaceholder": "Manufacturing year",
+    "imageURLPlaceholder": "Image URL",
+    "statusPlaceholder": "Vehicle status",
+    "insurancePlaceholder": "Vehicle insurance",
+    "saveButton": "Save",
+    "cancelButton": "Cancel"
+  },
+  "tenantCard": {
+    "imageAlt": "Profile image",
+    "name": "Name",
+    "surname": "Surname",
+    "age": "Age",
+    "email": "E-mail",
+    "address": "Address"
+  }
 }

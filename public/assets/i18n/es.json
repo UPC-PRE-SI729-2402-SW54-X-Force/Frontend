@@ -1,3 +1,218 @@
 {
-
+  "OFFERS": {
+    "TITLE": "¿Viajando? ¡Alquila un auto!",
+    "FILTER_DESTINATION": "Destino",
+    "FILTER_DATE": "Fecha",
+    "FILTER_MODEL": "Modelo",
+    "FILTER_INSURANCE": "Viajar con seguro",
+    "FILTER_EXCLUDE_PREMIUM": "Excluir ofertas premium",
+    "PLACEHOLDER_DESTINATION": "Lima, Perú",
+    "MODEL_FILTER_HINT": "ejemplos: Honda, Toyota",
+    "CARD_PREMIUM_BADGE": "Premium",
+    "CARD_OWNER": "Propietario:",
+    "CARD_MODEL": "Modelo:",
+    "CARD_YEAR": "Año:",
+    "CARD_SUBTITLE": "Subtítulo:",
+    "CARD_DESCRIPTION": "Descripción:",
+    "CARD_DESTINATION": "Destino:",
+    "CARD_BUTTON_ENABLED": "Habilitado",
+    "CARD_BUTTON_DISABLED": "No disponible",
+    "CARD_START_DATE": "Comienza el"
+  },
+  "companyInfo": {
+    "title": "DriveNow",
+    "profile": {
+      "title": "Perfil de la Solución",
+      "description": "DriveNow es una aplicación desarrollada por el equipo de X Force, que busca servir como puente entre las personas que buscan alquilar autos y quienes desean poner en alquiler el suyo."
+    },
+    "mission": {
+      "title": "Misión",
+      "description": "Proporcionar una plataforma accesible y confiable que conecte a propietarios de vehículos con usuarios que necesitan movilidad temporal, mejorando la eficiencia en el uso de automóviles y ofreciendo una alternativa segura y conveniente para la movilidad en Perú."
+    },
+    "vision": {
+      "title": "Visión",
+      "description": "Lograr que DriveNow se convierta en la opción preferida para el alquiler temporal de automóviles en las principales ciudades de Perú, maximizando el uso de vehículos subutilizados y generando ingresos adicionales para los propietarios."
+    }
+  },
+  "aboutUs": {
+    "title": "Nuestro Equipo",
+    "members": {
+      "aaron": {
+        "name": "Ávila Palacios Aarón Alexander",
+        "description": "Soy estudiante de ingeniería de software en mi quinto semestre. Tengo 23 años..."
+      },
+      "gabriel": {
+        "name": "Casas Sánchez Gabriel Alexander",
+        "description": "Soy estudiante de ingeniería de software en mi quinto semestre de estudios..."
+      },
+      "george": {
+        "name": "Galván Cerrón George Aldo",
+        "description": "Soy estudiante de Ingeniería de Software, actualmente en el 5º semestre en UPC. Tengo habilidades de desarrollo backend en lenguajes de programación como Python, C++ y Java."
+      },
+      "jamir": {
+        "name": "Marzál Pérez Jamir Ángel",
+        "description": "Soy estudiante de Ingeniería de Software. Mis principales cualidades son el trabajo en equipo, la escucha activa, la ética, la creatividad, la eficiencia y la responsabilidad. Tengo conocimientos de programación en C++, C# y Python."
+      },
+      "emilia": {
+        "name": "Durán Santander, Emilia Mercedes",
+        "description": "Soy estudiante de Ingeniería de Software en el 6º semestre en UPC. Tengo habilidades técnicas en C++, HTML y Javascript."
+      }
+    }
+  },
+  "contactUs": {
+    "title": "Contáctanos",
+    "form": {
+      "name": "Nombre",
+      "budget": "Presupuesto",
+      "email": "Correo Electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar"
+    },
+    "socialMedia": {
+      "instagram": "INSTAGRAM",
+      "twitter": "X",
+      "facebook": "FACEBOOK",
+      "linkedin": "LINKEDIN"
+    }
+  },
+  "resources": {
+    "safetyTips": {
+      "title": "Recomendaciones de Seguridad al Conducir",
+      "description": "Consejos para mantener la seguridad al conducir un vehículo alquilado, incluyendo el uso adecuado de cinturones de seguridad, respetar los límites de velocidad y estar atento a las condiciones del clima."
+    },
+    "necessaryDocumentation": {
+      "title": "Documentación Necesaria para Conducir",
+      "description": "Información sobre la documentación necesaria para conducir de forma segura y legal, incluyendo licencias actualizadas, seguro y más."
+    },
+    "popularTouristDestinations": {
+      "title": "Destinos Turísticos Populares",
+      "description": "Explora los sitios turísticos más populares de la región que puedes visitar durante tu viaje. Desde playas hasta montañas, descubre los mejores lugares para relajarte o aventurarte."
+    },
+    "scenicRoutes": {
+      "title": "Rutas Escénicas Recomendadas",
+      "description": "Descubre las rutas más pintorescas para conducir en tu destino. Disfruta de los paisajes mientras viajas a través de carreteras recomendadas por su belleza y tranquilidad."
+    }
+  },
+  "licenseDisplay": {
+    "licenseNumber": "Número de Licencia",
+    "licenseExpirationDate": "Fecha de expiración de la licencia",
+    "licenseIssueDate": "Fecha de emisión de la licencia",
+    "licenseClass": "Clase de Licencia",
+    "licenseCategory": "Categoría de Licencia",
+    "editLicense": "Editar Licencia",
+    "updateLicense": "Actualizar licencia",
+    "confirmUpdate": "Confirmar Actualización",
+    "cancelUpdate": "Cancelar"
+  },
+  "userSettings": {
+    "title": "Configuración del usuario",
+    "changeName": "Cambiar Nombre",
+    "changeEmail": "Cambiar correo electrónico",
+    "changeAddress": "Cambiar dirección",
+    "changePfp": "Cambiar foto de perfil"
+  },
+  "login": {
+    "title": "DriveNow",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "signIn": "Iniciar Sesión",
+    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "register": "Regístrate aquí"
+  },
+  "register": {
+    "title": "Registro",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "address": "Dirección",
+    "password": "Contraseña",
+    "registerAs": "Registrarse como",
+    "arrendatario": "Arrendatario",
+    "dueño": "Dueño de Vehículo",
+    "receiveEmails": "Quiero recibir correos electrónicos"
+  },
+  "userDataDisplay": {
+    "name": "Nombre",
+    "age": "Edad",
+    "email": "Correo electrónico",
+    "address": "Dirección",
+    "joinedAt": "Unido en"
+  },
+  "userOptionsList": {
+    "subscriptionStatus": "Estado de suscripción",
+    "manageSubscription": "Gestionar suscripción",
+    "account": "Cuenta",
+    "userData": "Datos del usuario",
+    "driversLicense": "Licencia de conducir",
+    "insurance": "Seguro",
+    "customerSupport": "Atención al cliente",
+    "faq": "Preguntas frecuentes",
+    "contactSupport": "Contactar soporte"
+  },
+  "subscriptionPlans": {
+    "free": {
+      "name": "Gratis",
+      "price": "$0",
+      "features": [
+        "Comunidad Drivenow",
+        "Acceso limitado a autos",
+        "Tiempo de espera estándar",
+        "Soporte básico",
+        "Recursos de Drivenow"
+      ]
+    },
+    "platinum": {
+      "name": "Platino",
+      "price": "$10",
+      "features": [
+        "Comunidad Drivenow",
+        "Acceso completo a la flota",
+        "Tiempo de espera preferencial",
+        "Soporte premium",
+        "Ofertas prioritarias",
+        "Bloqueo platino"
+      ]
+    },
+    "golden": {
+      "name": "Oro",
+      "price": "$25",
+      "features": [
+        "Comunidad Drivenow",
+        "Insignia verificada",
+        "Tiempo de espera preferencial",
+        "Soporte premium",
+        "Ofertas prioritarias",
+        "Bloqueo dorado",
+        "Sistema de recompensas"
+      ]
+    },
+    "selectButton": "Seleccionar"
+  },
+  "license": {
+    "currentLicense": "Licencia actual"
+  },
+  "vehicleCard": {
+    "imageAlt": "Imagen del vehículo",
+    "model": "Modelo",
+    "year": "Año",
+    "insurance": "Seguro",
+    "status": "Estado"
+  },
+  "vehicleForm": {
+    "modelPlaceholder": "Modelo del vehículo",
+    "yearPlaceholder": "Año de fabricación",
+    "imageURLPlaceholder": "URL de imagen",
+    "statusPlaceholder": "Estado del vehículo",
+    "insurancePlaceholder": "Seguro del vehículo",
+    "saveButton": "Guardar",
+    "cancelButton": "Cancelar"
+  },
+  "tenantCard": {
+    "imageAlt": "Imagen de perfil",
+    "name": "Nombre",
+    "surname": "Apellido",
+    "age": "Edad",
+    "email": "Correo electrónico",
+    "address": "Dirección"
+  }
 }
+

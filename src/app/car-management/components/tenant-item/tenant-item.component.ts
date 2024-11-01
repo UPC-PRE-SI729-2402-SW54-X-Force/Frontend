@@ -9,6 +9,7 @@ import {
   MatCardTitleGroup
 } from "@angular/material/card";
 import {NgOptimizedImage} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-tenant-item',
@@ -20,7 +21,8 @@ import {NgOptimizedImage} from "@angular/common";
     MatCardLgImage,
     MatCardTitle,
     MatCardTitleGroup,
-    NgOptimizedImage
+    NgOptimizedImage,
+    TranslateModule
   ],
   templateUrl: './tenant-item.component.html',
   styleUrl: './tenant-item.component.css'

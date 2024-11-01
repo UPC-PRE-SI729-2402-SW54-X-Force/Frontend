@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
 import { Offer } from './model/offer.model';
 import { DestinationMapComponent } from '../maps/destination-map.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-offers',
@@ -28,7 +29,8 @@ import { DestinationMapComponent } from '../maps/destination-map.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
-    DestinationMapComponent
+    DestinationMapComponent,
+    TranslateModule
   ],
   templateUrl: './offers.component.html',
   styleUrls: ['./offers.component.css']

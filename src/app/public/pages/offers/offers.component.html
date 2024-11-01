@@ -2,8 +2,8 @@
   <div class="sidebar">
 
     <mat-form-field appearance="outline">
-      <mat-label>Destination</mat-label>
-      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" (ngModelChange)="onDestinationChange($event)" />
+      <mat-label>{{ 'OFFERS.FILTER_DESTINATION' | translate }}</mat-label>
+      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" (ngModelChange)="onDestinationChange($event)"/>
       <button mat-icon-button matSuffix aria-label="Clear" *ngIf="destination" (click)="destination=''">
         <mat-icon>clear</mat-icon>
       </button>
@@ -13,32 +13,33 @@
     </mat-form-field>
 
 
-
     <mat-form-field appearance="outline">
-      <mat-label>Date</mat-label>
-      <input matInput [matDatepicker]="picker" [(ngModel)]="date" (dateChange)="onDateChange($event.value)" />
+      <mat-label>{{ 'OFFERS.FILTER_DATE'|translate }}</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="date" (dateChange)="onDateChange($event.value)"/>
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
 
     <mat-form-field appearance="outline">
-      <mat-label>Model</mat-label>
-      <input matInput [(ngModel)]="modelFilter" placeholder="e.g., Honda, Toyota" (ngModelChange)="onModelFilterChange($event)" />
+      <mat-label>{{ 'OFFERS.FILTER_MODEL'|translate }}</mat-label>
+      <input matInput [(ngModel)]="modelFilter" placeholder="e.g., Honda, Toyota"
+             (ngModelChange)="onModelFilterChange($event)"/>
     </mat-form-field>
 
 
+    <mat-checkbox [(ngModel)]="insuranceFilter" (change)="applyFilters()">{{ 'OFFERS.FILTER_INSURANCE'|translate }}
+    </mat-checkbox>
 
 
-    <mat-checkbox [(ngModel)]="insuranceFilter" (change)="applyFilters()">Travel with insurance</mat-checkbox>
-
-
-    <mat-checkbox [(ngModel)]="excludePremiumFilter" (change)="applyFilters()">Exclude premium offers</mat-checkbox>
+    <mat-checkbox [(ngModel)]="excludePremiumFilter"
+                  (change)="applyFilters()">{{ 'OFFERS.FILTER_EXCLUDE_PREMIUM'|translate }}
+    </mat-checkbox>
 
   </div>
 
   <div class="offers-list">
-    <h2>Traveling? Rent a car!</h2>
+    <h2>{{ 'OFFERS.TITLE'|translate }}</h2>
     <div class="offers-grid">
       <div class="card" *ngFor="let offer of filteredOffers">
 
@@ -47,12 +48,12 @@
 
         <div class="card-content">
           <h3>{{ offer.owner }}</h3>
-          <img [src]="offer.image" alt="{{ offer.model }}" />
-          <p><strong>Model:</strong> {{ offer.model }}</p>
-          <p><strong>Year:</strong> {{ offer.year }}</p>
-          <p><strong>Subtitle:</strong> {{ offer.subtitle }}</p>
-          <p><strong>Description:</strong> {{ offer.description }}</p>
-          <p><strong>Destination:</strong> {{ offer.destination }}</p>
+          <img [src]="offer.image" alt="{{ offer.model }}"/>
+          <p><strong>{{ 'OFFERS.CARD_MODEL'|translate }}</strong> {{ offer.model }}</p>
+          <p><strong>{{ 'OFFERS.CARD_YEAR'|translate }}</strong> {{ offer.year }}</p>
+          <p><strong>{{ 'OFFERS.CARD_SUBTITLE'|translate }}</strong> {{ offer.subtitle }}</p>
+          <p><strong>{{ 'OFFERS.CARD_DESCRIPTION'|translate }}</strong> {{ offer.description }}</p>
+          <p><strong>{{ 'OFFERS.CARD_DESTINATION'|translate }}</strong> {{ offer.destination }}</p>
         </div>
 
         <div class="card-footer">
@@ -62,7 +63,8 @@
           </button>
           <!-- Fecha "A partir de {date}" al lado del botón de estado -->
           <small class="start-date">
-            <span class="starting-text">Starting {{ offer.date | date: 'yyyy-MM-dd' }}</span>
+            <span
+              class="starting-text">{{ 'OFFERS.CARD_START_DATE'|translate }}{{ offer.date | date:'yyyy-MM-dd' }}</span>
           </small>
         </div>
       </div>

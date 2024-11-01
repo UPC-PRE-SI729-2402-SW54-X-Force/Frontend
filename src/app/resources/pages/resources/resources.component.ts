@@ -12,6 +12,7 @@ import {
 } from "@angular/material/card";
 import {MatButton, MatFabButton} from "@angular/material/button";
 import {NgOptimizedImage} from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-resources',
@@ -26,7 +27,8 @@ import {NgOptimizedImage} from "@angular/common";
     NgOptimizedImage,
     MatButton,
     MatCardSmImage,
-    MatCardActions
+    MatCardActions,
+    TranslateModule
   ],
   templateUrl: './resources.component.html',
   styleUrl: './resources.component.css'

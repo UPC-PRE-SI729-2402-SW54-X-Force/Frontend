@@ -5,6 +5,7 @@ import {Subscription} from "rxjs";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatList, MatListItem, MatListItemLine, MatListItemTitle} from "@angular/material/list";
 import {RouterLink, RouterModule} from "@angular/router";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-user',
@@ -16,7 +17,8 @@ import {RouterLink, RouterModule} from "@angular/router";
     MatListItemTitle,
     MatListItemLine,
     RouterLink,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
