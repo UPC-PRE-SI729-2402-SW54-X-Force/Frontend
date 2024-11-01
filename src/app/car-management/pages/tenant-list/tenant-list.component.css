@@ -1,0 +1,4 @@
+.tenant-list {
+  display: grid;
+  place-items: center;
+}

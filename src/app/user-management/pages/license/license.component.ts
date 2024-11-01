@@ -1,10 +1,11 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { DriverLicenseCardComponent } from "../../components/driver-license-card/driver-license-card.component";
-import { DriverLicenseDataEditComponent } from "../../components/driver-license-data-edit/driver-license-data-edit.component";
-import { Subscription } from "rxjs";
-import { User } from "../../model/user.entity";
-import { UsersService } from "../../services/users.service";
-import { Router } from '@angular/router';
+import {Component,} from '@angular/core';
+import {DriverLicenseCardComponent} from "../../components/driver-license-card/driver-license-card.component";
+import {
+  DriverLicenseDataEditComponent
+} from "../../components/driver-license-data-edit/driver-license-data-edit.component";
+import {Subscription} from "rxjs";
+import {License} from "../../model/license.entity";
+import {LicenseService} from "../../services/license.service";
 
 @Component({
   selector: 'app-license',
@@ -16,37 +17,15 @@ import { Router } from '@angular/router';
   templateUrl: './license.component.html',
   styleUrl: './license.component.css'
 })
-export class LicenseComponent implements OnInit {
+export class LicenseComponent {
 
-  userData: User;
-  subscription!: Subscription;
-
-  constructor(private userService: UsersService, private changeDetectorRef: ChangeDetectorRef, private router: Router) {
-    this.userData = new User();
+  constructor(private licenseService: LicenseService) {
   }
 
-  ngOnInit(): void {
-    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
-      this.userData = data;
-      this.changeDetectorRef.detectChanges(); // Trigger change detection
-    });
-  }
-
-  private updateUser(): void {
-    let userToUpdate: User = this.userData;
-    this.userService.update(userToUpdate.id, userToUpdate)
-      .subscribe((response: any) => {
-        this.userData = response;
-        this.changeDetectorRef.detectChanges(); // Trigger change detection
-        const currentUrl = this.router.url;
-        this.router.navigateByUrl('/').then(() => {
-          this.router.navigateByUrl(currentUrl).then(() => { });
-        }); // Force route reload
-      });
-  }
-
-  onUserLicenseUpdated(user: User) {
-    this.userData.license = user.license;
-    this.updateUser();
+  onUserLicenseUpdated(license: License) {
+    this.licenseService.update(license.id, license).subscribe(
+      {
+        next: () => console.log('License updated successfully')
+      })
   }
 }

@@ -3,43 +3,73 @@
 
     <mat-form-field appearance="outline">
       <mat-label>Destination</mat-label>
-      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" />
+      <input matInput [(ngModel)]="destination" placeholder="Lima, Perú" (ngModelChange)="onDestinationChange($event)" />
       <button mat-icon-button matSuffix aria-label="Clear" *ngIf="destination" (click)="destination=''">
         <mat-icon>clear</mat-icon>
+      </button>
+      <button mat-icon-button matSuffix aria-label="Open Map" (click)="openMap()">
+        <mat-icon>map</mat-icon>
       </button>
     </mat-form-field>
 
 
+
     <mat-form-field appearance="outline">
       <mat-label>Date</mat-label>
-      <input matInput [matDatepicker]="picker" />
+      <input matInput [matDatepicker]="picker" [(ngModel)]="date" (dateChange)="onDateChange($event.value)" />
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
 
 
-    <mat-checkbox>Travel with insurance</mat-checkbox>
-    <mat-checkbox>Exclude premium offers</mat-checkbox>
+    <mat-form-field appearance="outline">
+      <mat-label>Model</mat-label>
+      <input matInput [(ngModel)]="modelFilter" placeholder="e.g., Honda, Toyota" (ngModelChange)="onModelFilterChange($event)" />
+    </mat-form-field>
+
+
+
+
+    <mat-checkbox [(ngModel)]="insuranceFilter" (change)="applyFilters()">Travel with insurance</mat-checkbox>
+
+
+    <mat-checkbox [(ngModel)]="excludePremiumFilter" (change)="applyFilters()">Exclude premium offers</mat-checkbox>
+
   </div>
 
   <div class="offers-list">
     <h2>Traveling? Rent a car!</h2>
     <div class="offers-grid">
-      <div class="card" *ngFor="let offer of offers">
+      <div class="card" *ngFor="let offer of filteredOffers">
+
+
+        <div *ngIf="offer.premium === 'premium'" class="premium-badge">Premium</div>
+
         <div class="card-content">
           <h3>{{ offer.owner }}</h3>
-          <img [src]="offer.car.image" alt="{{ offer.car.model }}" />
-          <p>{{ offer.car.model }}</p>
-          <p>{{ offer.car.year }}</p>
-          <p>{{ offer.subtitle }}</p>
-          <p>{{ offer.description }}</p>
+          <img [src]="offer.image" alt="{{ offer.model }}" />
+          <p><strong>Model:</strong> {{ offer.model }}</p>
+          <p><strong>Year:</strong> {{ offer.year }}</p>
+          <p><strong>Subtitle:</strong> {{ offer.subtitle }}</p>
+          <p><strong>Description:</strong> {{ offer.description }}</p>
+          <p><strong>Destination:</strong> {{ offer.destination }}</p>
         </div>
+
         <div class="card-footer">
-          <button mat-raised-button color="primary" [disabled]="offer.status !== 'Enabled'">
+
+          <button mat-raised-button color="primary" [disabled]="offer.status !== 'Enabled'"
+                  (click)="navigateToReservationForm(offer)">
             {{ offer.status }}
           </button>
+
+          <small class="start-date">
+            <span class="starting-text">Starting {{ offer.date | date: 'yyyy-MM-dd' }}</span>
+          </small>
         </div>
       </div>
     </div>
   </div>
+
 </div>
+
+

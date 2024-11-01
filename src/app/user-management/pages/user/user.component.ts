@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {UsersService} from "../../services/users.service";
+import {UserService} from "../../services/user.service";
 import {User} from "../../model/user.entity";
 import {Subscription} from "rxjs";
 import {MatDividerModule} from "@angular/material/divider";
@@ -24,14 +24,20 @@ import {RouterLink, RouterModule} from "@angular/router";
 export class UserComponent implements OnInit {
 
   user: User;
-  subscription!: Subscription;
-  constructor(private userService: UsersService) {
+
+  constructor(private userService: UserService) {
     this.user = new User();
+
   }
   ngOnInit(): void {
-    this.subscription = this.userService.getById(this.userService.userId).subscribe((data: User) => {
+    const userId = Number(localStorage.getItem('userId'));
+    this.getUserById(userId);
+  }
+
+  private getUserById(id:number){
+    return this.userService.getById(id).subscribe((data: User) =>{
       this.user = data;
-    });
+    })
   }
 
 }
