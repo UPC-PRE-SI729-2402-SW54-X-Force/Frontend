@@ -16,6 +16,9 @@ import {LoginComponent} from "./user-management/pages/login/login.component";
 import {RegisterComponent} from "./user-management/pages/register/register.component";
 import {CarListComponent} from "./car-management/pages/car-list/car-list.component";
 import {TenantListComponent} from "./car-management/pages/tenant-list/tenant-list.component";
+import { ReservationFormComponent } from './public/pages/reservations/reservation-form/reservation-form.component';
+import { ReservationDetailsComponent } from './public/pages/reservations/reservation-details/reservation-details.component';
+import { ReservationListComponent } from './public/pages/reservations/reservation-list/reservation-list.component';
 
 export const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -35,5 +38,8 @@ export const routes: Routes = [
   {path: 'user/insurance', component: InsuranceComponent},
   {path: 'user/license', component: LicenseComponent},
   {path: 'user/subscription', component: SubscriptionComponent},
+  { path: 'reservations/new', component: ReservationFormComponent },
+  { path: 'reservations/:id', component: ReservationDetailsComponent },
+  { path: 'reservations', component: ReservationListComponent },
   {path: 'support', component: SupportComponent}
 ];
