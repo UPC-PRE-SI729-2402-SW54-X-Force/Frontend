@@ -56,11 +56,12 @@
         </div>
 
         <div class="card-footer">
-          <!-- Botón de estado -->
-          <button mat-raised-button color="primary" [disabled]="offer.status !== 'Enabled'">
+
+          <button mat-raised-button color="primary" [disabled]="offer.status !== 'Enabled'"
+                  (click)="navigateToReservationForm(offer)">
             {{ offer.status }}
           </button>
-          <!-- Fecha "A partir de {date}" al lado del botón de estado -->
+
           <small class="start-date">
             <span class="starting-text">Starting {{ offer.date | date: 'yyyy-MM-dd' }}</span>
           </small>

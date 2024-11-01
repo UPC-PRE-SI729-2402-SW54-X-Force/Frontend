@@ -1,0 +1,53 @@
+
+.reservation-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.reservation-card {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-left: 4px solid #2C3E50;
+}
+
+
+.reservation-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #2C3E50;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.reservation-info {
+  font-size: 0.95em;
+  color: #2C3E50;
+}
+
+
+.details-button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  color: #FFFFFF;
+  background-color: #E67E22;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.details-button:hover {
+  background-color: #d35400;
+}

@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
@@ -44,7 +44,7 @@ export class OffersComponent implements OnInit, AfterViewInit {
 
   @ViewChild('picker', { static: true }) datepicker!: MatDatepicker<any>;
 
-  constructor(private http: HttpClient, private dialog: MatDialog) {}
+  constructor(private http: HttpClient, private dialog: MatDialog, private router: Router) {} // Añade Router en el constructor
 
   ngOnInit(): void {
     this.getOffers();
@@ -107,5 +107,10 @@ export class OffersComponent implements OnInit, AfterViewInit {
       (!this.insuranceFilter || offer.insurance === 'with insurance') &&
       (!this.excludePremiumFilter || offer.premium !== 'premium')
     );
+  }
+
+
+  navigateToReservationForm(offer: Offer): void {
+    this.router.navigate(['/reservations/new'], { state: { offer } });
   }
 }
