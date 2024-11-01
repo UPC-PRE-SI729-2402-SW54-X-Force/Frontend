@@ -1,0 +1,20 @@
+<div class="tenant-container"></div>
+<mat-card class="tenant-card" appearance="outlined">
+  <div class="tenant-content">
+    <img mat-card-lg-image [ngSrc]="tenant.pfp" alt="Vehicle image" width="30" height="100"
+         class="tenant-image">
+    <div class="tenant-text">
+      <mat-card-header>
+        <mat-card-title-group>
+          <mat-card-title><strong>{{ tenant.name }} {{ tenant.surname }}</strong></mat-card-title>
+        </mat-card-title-group>
+      </mat-card-header>
+      <mat-card-content>
+        <br>
+        <p><strong>Edad:</strong> {{ tenant.age }}</p>
+        <p><strong>Email:</strong> {{ tenant.email }}</p>
+        <p><strong>Dirección:</strong> {{ tenant.address }}</p>
+      </mat-card-content>
+    </div>
+  </div>
+</mat-card>

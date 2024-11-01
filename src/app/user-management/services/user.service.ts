@@ -5,13 +5,10 @@ import {BaseService} from '../../shared/services/base.service';
 @Injectable({
   providedIn: 'root'
 })
-export class UsersService extends BaseService<User> {
+export class UserService extends BaseService<User> {
 
   constructor() {
     super();
-  }
-
-  public setResourceEndPoint(resourceEndPoint: string) {
-    this.resourceEndpoint = resourceEndPoint;
+    this.resourceEndpoint = '/users';
   }
 }

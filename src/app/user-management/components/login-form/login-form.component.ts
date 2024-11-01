@@ -3,7 +3,7 @@ import {MatFormField, MatLabel} from "@angular/material/form-field";
 import {MatButton} from "@angular/material/button";
 import {MatInput} from "@angular/material/input";
 import {Router, RouterLink} from "@angular/router";
-import {UsersService} from "../../services/users.service";
+import {UserService} from "../../services/user.service";
 import {FormsModule} from "@angular/forms";
 import {User} from "../../model/user.entity";
 
@@ -25,36 +25,31 @@ export class LoginFormComponent {
   email: string = '';
   password: string = '';
 
-  constructor(private userService: UsersService, private router: Router) {
+  constructor(private userService: UserService, private router: Router) {
   }
 
   login() {
 
-    this.userService.setResourceEndPoint('/users2');
-    this.userService.getAll().subscribe((users: any[]) => {
-      let user = users.find((u: any) => u.email === this.email && u.password === this.password);
+    this.userService.getAll().subscribe((users: User[]): void => {
+      let user: User | undefined = users.find((u: User): boolean => u.email === this.email && u.password === this.password);
 
       if (user) {
         localStorage.setItem('userId', user.id.toString());
-        localStorage.setItem('userRole', 'arrendatario');
-        this.router.navigate(['/home']);
+        localStorage.setItem('userRole', user.userType);
+        if (user.userType === 'arrendatario')
+          this.router.navigate(['/offers']);
+        else
+          this.router.navigate(['/vehicles']);
       } else {
-        // Intentar con el endpoint de "dueños de vehículos"
-        this.userService.setResourceEndPoint('/users1');
-        this.userService.getAll().subscribe((users: any[]) => {
-          user = users.find((u: any) => u.email === this.email && u.password === this.password);
-
-          if (user) {
-            localStorage.setItem('userId', user.id.toString());
-            localStorage.setItem('userRole', 'dueño');
-            this.router.navigate(['/home']);
-          } else {
-            console.error('Credenciales incorrectas');
-            alert('Email o contraseña incorrectos.');
-          }
-        });
+        console.error('Credenciales incorrectas');
+        alert('Email o contraseña incorrectos.');
       }
     });
   }
-
 }
+
+
+
+
+
+

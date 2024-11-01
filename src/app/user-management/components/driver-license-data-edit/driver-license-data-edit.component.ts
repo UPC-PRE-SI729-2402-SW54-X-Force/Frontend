@@ -1,15 +1,13 @@
 import {Component, EventEmitter, Input, Output, ViewChild} from '@angular/core';
-import {User} from "../../model/user.entity";
 import {MatButton} from "@angular/material/button";
 import {NgForOf, NgIf} from "@angular/common";
 import {FormControl, FormsModule, NgForm, ReactiveFormsModule} from "@angular/forms";
 import {MatFormField, MatHint, MatLabel} from "@angular/material/form-field";
 import {License} from "../../model/license.entity";
 import {MatInput, MatInputModule} from "@angular/material/input";
-import {provideNativeDateAdapter} from '@angular/material/core';
 import {MatOptgroup, MatOption, MatSelect} from "@angular/material/select";
 import {group} from "@angular/animations";
-import {MatDatepickerModule, MatDatepickerInput, MatDatepickerToggle} from "@angular/material/datepicker";
+import {MatDatepickerInput, MatDatepickerModule, MatDatepickerToggle} from "@angular/material/datepicker";
 import {MatIcon, MatIconModule} from "@angular/material/icon";
 
 interface licenseClass{
@@ -54,10 +52,9 @@ interface licenseCategory{
 })
 export class DriverLicenseDataEditComponent {
   @ViewChild('editLicenseForm', {static: false}) editLicenseForm!: NgForm;
-  @Input() user: User;
   @Input() license:License;
   @Input() editLicenseMode: boolean = false;
-  @Output() userLicenseUpdated: EventEmitter<User> = new EventEmitter<User>();
+  @Output() userLicenseUpdated: EventEmitter<License> = new EventEmitter<License>();
   @Output() editCanceled: EventEmitter<any> = new EventEmitter();
 
   licenseClasses: licenseClass[] = [
@@ -88,12 +85,10 @@ export class DriverLicenseDataEditComponent {
     }
   ];
   constructor() {
-    this.user = {} as User;
     this.license = {} as License;
   }
 
-  private resetEditLicense(): void {
-    this.user = {} as User;
+  private resetEditLicense():void {
     this.license = {} as License;
     this.editLicenseMode = false;
     this.editLicenseForm.resetForm();
@@ -116,23 +111,22 @@ export class DriverLicenseDataEditComponent {
         const formattedExpirationDate = expirationDate.toISOString().split('T')[0];
 
         const issueDate = new Date(this.license.expirationDate);
-        const formattedIssueDate = expirationDate.toISOString().split('T')[0];
+        const formattedIssueDate = issueDate.toISOString().split('T')[0];
 
-        const formattedLicense = {
+        this.license = {
           id: this.license.id,
-          surname: this.license.surname,
+          userId: Number(localStorage.getItem('userId')),
           name: this.license.name,
+          surname: this.license.surname,
           licenseNumber: this.license.licenseNumber,
-          class: this.license.class,
+          licenseClass: this.license.licenseClass,
           expirationDate: formattedExpirationDate,
           issueDate: formattedIssueDate,
-          category: this.license.category,
-          urlImage: this.license.urlImage
+          licenseCategory: this.license.licenseCategory,
+          licenseUrlImage: this.license.licenseUrlImage
         };
-
-        this.user.license = [formattedLicense];
-        let emitter: EventEmitter<User> = this.userLicenseUpdated;
-        emitter.emit(this.user);
+        let emitter: EventEmitter<License> = this.userLicenseUpdated;
+        emitter.emit(this.license);
         console.log('Form is valid');
         this.resetEditLicense()
       }

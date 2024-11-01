@@ -1,23 +1,25 @@
 export class License {
-  id: string;
-  surname: string;
+  id: number;
+  userId: number;
   name: string;
+  surname: string;
   licenseNumber: string;
-  class: string;
+  licenseClass: string;
   expirationDate: string;
   issueDate: string;
-  category: string;
-  urlImage: string;
+  licenseCategory: string;
+  licenseUrlImage: string;
 
   constructor() {
-    this.id = "";
-    this.surname = "";
+    this.id = 0;
+    this.userId = 0;
     this.name = "";
+    this.surname = "";
     this.licenseNumber = "";
-    this.class = "";
+    this.licenseClass = "";
     this.expirationDate = "";
     this.issueDate = "";
-    this.category = "";
-    this.urlImage = "";
+    this.licenseCategory = "";
+    this.licenseUrlImage = "";
   }
 }

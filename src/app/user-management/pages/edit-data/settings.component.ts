@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {UserDataEditComponent} from "../../components/user-data-edit/user-data-edit.component";
 import {User} from "../../model/user.entity";
-import {UsersService} from "../../services/users.service";
-import {Subscription} from "rxjs";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-edit-data',
@@ -13,22 +12,21 @@ import {Subscription} from "rxjs";
   templateUrl: './settings.component.html',
   styleUrl: './settings.component.css'
 })
-export class SettingsComponent implements OnInit{
-  //Attributes
+export class SettingsComponent implements OnInit {
   userData: User;
-  subscription!: Subscription;
 
-  constructor(private userService: UsersService) {
+
+  constructor(private userService: UserService) {
     this.userData = new User();
-    this.userService.setResourceEndPoint('/users2');
   }
 
   ngOnInit(): void {
-    this.subscription = this.getUserById(1);
+    const userId = Number(localStorage.getItem('userId'));
+    this.getUserById(userId);
   }
 
-  private getUserById(id:number){
-    return this.userService.getById(id).subscribe((data:User ) =>{
+  private getUserById(id: number) {
+    this.userService.getById(id).subscribe((data: User) => {
       this.userData = data;
     });
   }
