@@ -47,6 +47,15 @@
       "pfp": "https://st2.depositphotos.com/1144472/7360/i/450/depositphotos_73608199-stock-photo-woman-showing-thumbs-up-gesture.jpg",
       "joined": "2021-01-03",
       "password": "123456"
+    },
+    {
+      "id": 6,
+      "name": "José",
+      "email": "jose@gmail.com",
+      "address": "Av. La Molina 2554",
+      "password": "654321",
+      "userType": "dueño",
+      "pfp": "https://miro.medium.com/v2/resize:fit:1024/1*BEY7PZ3z0p6hxKLjYRdyvw.png"
     }
   ],
   "vehicles": [

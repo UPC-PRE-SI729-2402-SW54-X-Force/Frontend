@@ -6,11 +6,12 @@ import {MatToolbar} from "@angular/material/toolbar";
 import {MatAnchor} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
 import {NgForOf, NgIf, NgOptimizedImage} from "@angular/common";
+import {LanguageSwitcherComponent} from "./public/components/language-switcher/language-switcher.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatToolbar, MatAnchor, RouterLink, MatIcon, NgIf, NgOptimizedImage, NgForOf],
+  imports: [RouterOutlet, MatToolbar, MatAnchor, RouterLink, MatIcon, NgIf, NgOptimizedImage, NgForOf, LanguageSwitcherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
